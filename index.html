@@ -3793,64 +3793,6 @@ body:not([data-studio-view="preview"]) :is(.classroom-tools,[data-action="assets
   @media(max-height:500px){.workspace-dialog{max-height:96dvh}.dialog-head{padding-block:14px}.dialog-actions{padding-block:10px}.dialog-head p{margin-bottom:0}}
 }
 </style>
-
-<style id="developer-contact-styles">
-.developer-contact-dialog{position:fixed;inset:0;margin:auto;width:min(456px,calc(100vw - 32px));height:fit-content;max-width:none;max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--line);border-radius:28px;background:var(--surface);color:var(--ink);box-shadow:0 28px 100px #10291c40;font-family:Studio,Arial,sans-serif;overflow:hidden}
-.developer-contact-dialog[open]{display:flex;flex-direction:column;animation:developer-contact-enter .22s ease-out}
-.developer-contact-dialog::backdrop{background:#0c211bb3;backdrop-filter:blur(7px)}
-.developer-contact-content{min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:22px 26px 24px;background:radial-gradient(ellipse at 100% 0%,#35b97a18,transparent 55%),radial-gradient(ellipse at 0% 0%,#239edb12,transparent 48%)}
-.developer-contact-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
-.developer-contact-kicker{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--green)}
-.developer-contact-kicker:before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px #35b97a13}
-.developer-contact-dialog .developer-contact-close{width:40px;height:40px;min-height:40px;border:1px solid var(--line);background:var(--surface);border-radius:50%;color:var(--muted);display:grid;place-items:center;cursor:pointer;flex:none}
-.developer-contact-close .icon{width:18px;height:18px}
-.developer-contact-close:hover{background:var(--mint);color:var(--green)}
-.developer-contact-emblem{display:grid;place-items:center;width:64px;height:64px;border:1px solid var(--line);border-radius:21px;background:var(--surface);color:var(--green);box-shadow:0 8px 24px #1766500d;margin:12px 0 18px;transform:rotate(-6deg)}
-.developer-contact-emblem .icon{width:31px;height:31px;transform:rotate(6deg)}
-.developer-contact-dialog h2{font-size:25px;line-height:1.65;letter-spacing:-.4px;margin:0 0 12px;color:var(--ink)}
-.developer-contact-dialog p{margin:0 0 23px;font-size:14px;line-height:2.05;color:var(--ink);opacity:.8}
-.developer-contact-links{display:grid;gap:12px}
-.developer-contact-link{display:flex;align-items:center;gap:13px;min-height:78px;padding:15px 17px;border:1px solid #ffffff1f;border-radius:17px;color:#fff;text-decoration:none;transition:transform .16s,filter .16s,box-shadow .16s}
-.developer-contact-link:visited{color:#fff}
-.developer-contact-whatsapp{background:linear-gradient(125deg,#188354,#10613d);box-shadow:0 7px 20px #10613d1a}
-.developer-contact-telegram{background:linear-gradient(125deg,#167fb7,#096394);box-shadow:0 7px 20px #0963941a}
-.developer-contact-link:hover{transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 10px 24px #10291c26}
-.developer-contact-link:active{transform:translateY(0)}
-.developer-contact-link:focus-visible{outline:3px solid var(--green);outline-offset:4px}
-.developer-contact-brand{width:42px;height:42px;display:grid;place-items:center;flex:none;border:1px solid #ffffff30;border-radius:13px;background:#ffffff12}
-.developer-contact-brand svg{width:25px;height:25px;display:block;fill:currentColor}
-.developer-contact-label{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0}
-.developer-contact-label strong{font-size:15px;font-weight:700;line-height:1.5}
-.developer-contact-label small{font-size:12px;line-height:1.6;color:#fff;font-family:Studio,Arial,sans-serif;white-space:nowrap;opacity:.9}
-.developer-contact-link>[data-icon]{margin-inline-start:auto;display:flex;flex:none;opacity:.8}.developer-contact-link>[data-icon] .icon{width:19px;height:19px}
-.developer-contact-footer{flex:none;padding:15px 26px 20px;border-top:1px solid var(--line);background:var(--surface)}
-.developer-contact-skip{display:flex;justify-content:center;align-items:center;gap:9px;width:100%;min-height:48px;border:1px solid var(--line);border-radius:13px;background:var(--background);color:var(--ink);font:700 13px Studio,Arial,sans-serif;cursor:pointer}
-.developer-contact-skip:hover{background:var(--mint);border-color:var(--green)}
-.developer-contact-skip .icon{width:17px;height:17px}
-.developer-contact-skip:focus-visible,.developer-contact-close:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-.studio-archive-shortcut{grid-column:1/-1;flex-direction:row;align-items:center;gap:13px;min-height:80px;background:var(--mint);border-color:var(--line)}
-.studio-archive-copy{display:flex;flex-direction:column;gap:3px}
-.studio-archive-copy small{font-size:10px;font-weight:400;color:var(--muted)}
-.studio-archive-shortcut>[data-icon]:last-child{margin-inline-start:auto;display:flex}.studio-archive-shortcut>[data-icon]:last-child .icon{width:18px}
-.mobile-workspace-tabs button[data-studio-route=contact]>span:last-child{max-width:100%;font-size:9px;line-height:1.5;text-wrap:balance}
-@keyframes developer-contact-enter{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(max-width:380px){.developer-contact-content{padding:17px 19px 20px}.developer-contact-dialog h2{font-size:22px}.developer-contact-dialog p{font-size:13px;margin-bottom:19px}.developer-contact-footer{padding:13px 19px 17px}.developer-contact-link{gap:10px;padding:13px}.developer-contact-brand{width:38px;height:38px}.developer-contact-emblem{margin-block:8px 14px}}
-@media(max-height:620px){.developer-contact-emblem{display:none}.developer-contact-topline{margin-bottom:12px}.developer-contact-content{padding-block:16px}.developer-contact-dialog h2{font-size:21px;margin-bottom:8px}.developer-contact-dialog p{font-size:13px;margin-bottom:16px}.developer-contact-link{min-height:65px;padding-block:10px}.developer-contact-links{gap:10px}.developer-contact-footer{padding-block:12px}}
-@media(prefers-reduced-motion:reduce){.developer-contact-dialog[open]{animation:none}.developer-contact-link{transition:none}}
-@media print{#developerContactDialog,#developerContactDialog::backdrop{display:none!important}}
-</style>
-<style id="localSubscriberStyles">
-/* Local subscriber access */
-.subscription-bar{flex:none;display:flex;align-items:center;gap:14px;margin:14px 28px 0;padding:12px 15px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
-.subscription-status{display:flex;align-items:center;gap:10px;flex:1;min-width:0}.subscription-status>[data-icon]{display:flex;flex:none;color:var(--green)}.subscription-status .icon{color:var(--green);width:22px;height:22px;flex:none}.subscription-status strong,.subscription-status small{display:block}.subscription-status strong{font-size:12px}.subscription-status small{color:var(--muted);font-size:10px;margin-top:3px;line-height:1.7}
-.subscription-bar .button{min-height:41px;white-space:nowrap}.subscription-telegram{display:flex;align-items:center;gap:12px;justify-content:center;min-height:47px;padding:11px 18px;color:#fff!important;background:linear-gradient(125deg,#1686ce,#2462d3);border:1px solid #3499ed;border-radius:13px;text-decoration:none;box-shadow:0 5px 15px #167bce22;transition:transform .15s,box-shadow .15s;flex:none}.subscription-telegram:hover{transform:translateY(-1px);box-shadow:0 7px 20px #167bce38}.subscription-telegram svg{width:25px;height:25px;fill:currentColor;flex:none}.subscription-telegram strong,.subscription-telegram small{display:block}.subscription-telegram strong{font-size:12px}.subscription-telegram small{font-size:11px;opacity:.9;margin-top:2px}
-.subscriber-dialog{width:min(460px,calc(100vw - 28px));max-height:calc(100dvh - 28px);padding:0;border:1px solid var(--line);border-radius:25px;background:var(--surface);color:var(--ink);box-shadow:0 25px 80px #102d3b38;overflow:auto}.subscriber-dialog::backdrop{background:#10252b88;backdrop-filter:blur(5px)}.subscriber-content{padding:25px}.subscriber-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.subscriber-kicker{font-size:11px;color:var(--green);font-weight:700}.subscriber-emblem{display:grid;place-items:center;width:57px;height:57px;background:var(--mint);border:1px solid var(--line);border-radius:18px;color:var(--green);margin-bottom:17px}.subscriber-emblem .icon{width:28px;height:28px}.subscriber-dialog h2{font-size:24px;line-height:1.5;margin:0 0 8px}.subscriber-description{color:var(--muted);font-size:12px;line-height:1.9;margin:0 0 21px}.subscriber-form{display:grid;gap:15px}.subscriber-form label>span{display:block;margin-bottom:7px;font-size:12px;font-weight:700}.subscriber-input{width:100%;min-height:49px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--background);color:var(--ink);font:14px Studio,Arial,sans-serif}.subscriber-input:focus{outline:2px solid var(--green);outline-offset:2px}.subscriber-code-wrap{position:relative;direction:ltr}.subscriber-code-wrap input{padding-inline-end:54px;letter-spacing:1.2px}.subscriber-code-toggle{position:absolute;inset-inline-end:6px;top:6px;width:38px;height:37px;border:0;border-radius:9px;color:var(--muted);background:transparent;display:grid;place-items:center}.subscriber-code-toggle:hover{background:var(--mint)}.subscriber-remember{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:11px}.subscriber-remember input{width:17px;height:17px;accent-color:var(--green)}.subscriber-error{border:1px solid #d8505040;border-radius:11px;background:#d8505010;color:#bf4444;padding:11px 13px;font-size:12px;line-height:1.8}.subscriber-submit{width:100%;min-height:49px;justify-content:center}.subscriber-divider{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;margin:21px 0 14px}.subscriber-divider:before,.subscriber-divider:after{content:"";height:1px;background:var(--line);flex:1}.subscriber-dialog .subscription-telegram{justify-content:flex-start;padding:16px;min-height:73px}.subscriber-dialog .subscription-telegram>span{flex:1}.subscriber-dialog .subscription-telegram>.icon{fill:none;width:21px;height:21px}.subscriber-browse{display:block;margin:16px auto 0;font-size:11px;color:var(--muted)}.subscriber-member-name{direction:ltr;display:block;background:var(--mint);color:var(--green);border:1px solid var(--line);border-radius:13px;padding:15px;text-align:center;font-size:17px;letter-spacing:1px;margin:18px 0}.subscriber-member-actions{display:grid;gap:10px}.subscriber-member-actions .button{justify-content:center;min-height:46px}.subscriber-edit-button{margin-inline-start:auto;white-space:nowrap}.guest-mode #blocksEditor :is(textarea,input)[readonly]{cursor:pointer}.guest-mode #blocksEditor :is(textarea,input)[readonly]:focus{outline:2px solid #2788cb;outline-offset:2px}
-@media(max-width:1000px){.subscription-bar{margin:12px 20px 0;flex-wrap:wrap;gap:10px}.subscription-status{flex-basis:calc(100% - 120px)}.subscription-bar .subscription-telegram{width:100%;min-height:44px;justify-content:center}.subscription-bar .subscription-telegram small{display:none}.subscription-bar .subscription-telegram svg{width:21px;height:21px}.subscriber-edit-button{font-size:11px}.studio-editor-history{flex-wrap:wrap}}
-@media(max-width:520px){.subscription-bar{margin-inline:14px;padding:12px}.subscription-status small{font-size:10px}.subscription-bar .button{font-size:11px;padding-inline:12px}.subscriber-content{padding:21px}.subscriber-dialog h2{font-size:22px}.subscriber-input{font-size:16px}.subscriber-edit-button{margin-inline-start:0}}
-@media(prefers-reduced-motion:reduce){.subscription-telegram{transition:none}}
-@media print{.subscription-bar,#subscriberLoginDialog,#subscriberAccountDialog{display:none!important}}
-
-</style>
 </head>
 <body>
 <div class="app-shell" id="appShell" aria-hidden="false">
@@ -3862,32 +3804,30 @@ body:not([data-studio-view="preview"]) :is(.classroom-tools,[data-action="assets
         <button class="active" data-view="editor"><span data-icon="edit"></span>محرر الملزمة<span class="nav-dot"></span></button>
         <button data-studio-route="preview"><span data-icon="eye"></span>معاينة الملزمة</button>
         <button data-view="templates"><span data-icon="palette"></span>قوالب التصميم<span class="pill" id="templateCount">١٤</span></button>
-        <button type="button" data-studio-route="contact" aria-haspopup="dialog" aria-controls="developerContactDialog" aria-expanded="false"><span data-icon="message"></span>تواصل مع المطور</button>
-        <button type="button" data-studio-route="more" aria-haspopup="dialog" aria-controls="studioToolsDialog"><span data-icon="settings"></span>المزيد</button>
+        <button data-view="archive"><span data-icon="folder"></span>ملازمي المحفوظة</button>
       </nav>
       <div class="sidebar-divider"></div>
-      <div class="nav-caption recent-label">فتحتها مؤخرًا<button type="button" data-studio-route="more" aria-label="فتح المزيد"><span data-icon="arrow-left"></span></button></div>
+      <div class="nav-caption recent-label">فتحتها مؤخرًا<button data-view="archive" aria-label="عرض جميع المشاريع"><span data-icon="arrow-left"></span></button></div>
       <div id="recentProjects" class="recent-projects"></div>
       <div class="sidebar-bottom"><div class="local-note"><span class="local-note-icon" data-icon="shield"></span><div><strong>عملك محفوظ عندك</strong><p>مشاريعك تبقى على هذا الجهاز.<br>نزّل نسخة لتحتفظ بها دائمًا.</p></div></div><button class="help-link" data-action="help"><span data-icon="help"></span>دليل الاستخدام<span data-icon="arrow-left"></span></button><div class="sidebar-foot">صُنعت لتسهّل يوم الأستاذ <span>✦</span></div></div>
     </aside>
     <main class="main-shell">
       <header class="topbar">
         <div class="project-context"><span class="mobile-logo"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Crect%20width%3D%2248%22%20height%3D%2248%22%20rx%3D%2214%22%20fill%3D%22%23176650%22%2F%3E%3Cpath%20d%3D%22M24%2014c-5-3-11-2-14-1v22c4-1%209-1%2014%202%205-3%2010-3%2014-2V13c-3-1-9-2-14%201Zm0%200v23%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.4%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M16%2020h4m-4%206h4m8-6h4m-4%206h4%22%20stroke%3D%22%239de0bc%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E%0A" alt="" width="30" height="30"></span><span class="project-icon" data-icon="file"></span><div><button id="projectName" class="project-name" data-action="metadata">مختبر المستقبل <span data-icon="chevron-down"></span></button><div class="save-state"><span class="status-dot"></span><span id="saveStatus" role="status">جارٍ تجهيز مساحة العمل…</span></div></div><span class="draft-badge">مسودة</span></div>
-        <div class="top-actions"><button type="button" class="icon-button" data-studio-theme aria-label="تفعيل الوضع الليلي"><span class="studio-theme-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8.5 8.5 0 1 0 10 10Z"/></svg></span></button><button type="button" class="icon-button" data-studio-tools aria-label="المزيد" aria-haspopup="dialog" aria-controls="studioToolsDialog"><span data-icon="sliders"></span></button><button class="icon-button" id="undoButton" data-action="undo" title="تراجع (Ctrl+Z)" aria-label="تراجع"><span data-icon="undo"></span></button><button class="icon-button" id="redoButton" data-action="redo" title="إعادة (Ctrl+Shift+Z)" aria-label="إعادة"><span data-icon="redo"></span></button><span class="action-divider"></span><button class="button secondary save-project-button" data-action="export"><span data-icon="download"></span><span>حفظ المشروع</span></button><button class="button primary" data-action="print"><span data-icon="printer"></span><span>طباعة / حفظ PDF</span></button></div>
+        <div class="top-actions"><button type="button" class="icon-button" data-studio-theme aria-label="تفعيل الوضع الليلي"><span class="studio-theme-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8.5 8.5 0 1 0 10 10Z"/></svg></span></button><button type="button" class="icon-button" data-studio-tools aria-label="أدوات الملزمة"><span data-icon="sliders"></span></button><button class="icon-button" id="undoButton" data-action="undo" title="تراجع (Ctrl+Z)" aria-label="تراجع"><span data-icon="undo"></span></button><button class="icon-button" id="redoButton" data-action="redo" title="إعادة (Ctrl+Shift+Z)" aria-label="إعادة"><span data-icon="redo"></span></button><span class="action-divider"></span><button class="button secondary save-project-button" data-action="export"><span data-icon="download"></span><span>حفظ المشروع</span></button><button class="button primary" data-action="print"><span data-icon="printer"></span><span>طباعة / حفظ PDF</span></button></div>
       </header>
-      <section class="subscription-bar" aria-label="حساب الاشتراك"><div class="subscription-status"><span data-icon="shield"></span><div><strong id="subscriberStatusTitle">أنت تتصفح بوضع الزائر</strong><small id="subscriberStatusDescription">تصفح التطبيق واختر القالب، وسجل الدخول للإنشاء والتعديل.</small></div></div><button type="button" id="subscriberAccountButton" class="button secondary" aria-haspopup="dialog" aria-controls="subscriberLoginDialog">تسجيل الدخول</button><a class="subscription-telegram" href="https://t.me/Ayman_donia" target="_blank" rel="noopener noreferrer" aria-label="طلب الاشتراك عبر تليجرام لدى Ayman_donia، يفتح في نافذة جديدة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 3.3 18.6 20c-.2 1.2-.9 1.5-1.9.9l-5-3.7-2.4 2.4c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L5.9 13.5 1 12c-1.1-.3-1.1-1.1.2-1.6L20.4 3c.9-.3 1.8.2 1.5.3Z"/></svg><span><strong>طلب الاشتراك عبر تليجرام</strong><small dir="ltr">@Ayman_donia</small></span></a></section>
       <div class="workspace-intro"><div><div class="eyebrow"><span data-icon="spark"></span>كل فكرة تستحق ملزمة جميلة</div><h1 id="viewTitle"></h1><p id="viewSubtitle"></p></div><button class="button quiet" data-action="metadata"><span data-icon="settings"></span>بيانات الملزمة</button></div>
-      <nav class="mobile-nav" aria-label="التنقل"><button class="active" data-view="editor">المحرر</button><button data-view="templates">القوالب</button><button type="button" data-studio-route="contact" aria-haspopup="dialog" aria-controls="developerContactDialog" aria-expanded="false">تواصل مع المطور</button></nav>
+      <nav class="mobile-nav" aria-label="التنقل"><button class="active" data-view="editor">المحرر</button><button data-view="templates">القوالب</button><button data-view="archive">ملازمي</button></nav>
       <div id="editorView" class="workspace-view editor-layout">
         <section class="editor-panel" aria-label="محرر المحتوى">
           <div class="editor-create-area"><button type="button" class="new-notebook-card" data-action="new" aria-label="إنشاء ملزمة جديدة"><span class="new-notebook-icon" data-icon="plus"></span><span class="new-notebook-title">إنشاء ملزمة جديدة</span><span class="new-notebook-arrow" data-icon="chevron-left" aria-hidden="true"></span></button></div>
           <div class="format-toolbar"><select id="activeType" aria-label="نوع العنصر المحدد"></select><span class="toolbar-divider"></span><button class="format-button" data-action="bold" aria-label="نص غامق" title="نص غامق"><b>B</b></button><button class="format-button" data-action="italic" aria-label="نص مائل" title="نص مائل"><i>I</i></button><button class="format-button" data-action="direction" aria-label="تغيير اتجاه العنصر" title="عربي / إنجليزي"><span data-icon="align"></span></button><span class="toolbar-divider"></span><button class="format-button" data-add="list" aria-label="إضافة قائمة" title="قائمة"><span data-icon="list"></span></button><button class="format-button" data-add="image" aria-label="إضافة صورة" title="صورة"><span data-icon="image"></span></button><button class="format-button" data-add="table" aria-label="إضافة جدول" title="جدول"><span data-icon="table"></span></button><button class="format-button" data-add="equation" aria-label="كتابة معادلة بسهولة" title="محرر المعادلات البصري">𝑥²</button><button class="format-button" data-add="break" aria-label="إضافة فاصل صفحة" title="فاصل صفحة"><span data-icon="page-break"></span></button></div>
           <div id="editorScroll" class="editor-scroll"><section id="showcaseWelcome" class="showcase-welcome" aria-label="استكشف النموذج الاستعراضي" hidden>
   <div class="showcase-kicker">النموذج الاستعراضي</div><h2>مختبر المستقبل</h2>
-  <p>٨ فصول تجمع الشرح والصور والجداول والمعادلات والتمارين. اختر ميزة لتنتقل إلى مثالها داخل الملزمة، وسجل الدخول لتعديلها.</p>
+  <p>٨ فصول تجمع الشرح والصور والجداول والمعادلات والتمارين. اختر ميزة لتنتقل إلى مثالها داخل الملزمة، ثم جرّب تعديلها.</p>
   <div class="showcase-jumps" aria-label="أمثلة المزايا">
     <button type="button" data-showcase-jump="cover">الغلاف</button><button type="button" data-showcase-jump="toc">الفهرس</button><button type="button" data-showcase-jump="image">الصور</button><button type="button" data-showcase-jump="table">الجداول</button><button type="button" data-showcase-jump="equation">المعادلات</button><button type="button" data-showcase-jump="exercise">التمارين</button><button type="button" data-showcase-jump="answers">الإجابات</button>
-  </div><div class="showcase-footer"><span>استكشف النموذج واختر قالبك، وسجل الدخول لتعديل المحتوى أو إنشاء ملزمتك.</span><button type="button" class="text-button" data-view="templates">شاهد جميع القوالب ←</button></div>
+  </div><div class="showcase-footer"><span>عدّل هذا النموذج بحرية، أو ابدأ بملزمتك الخاصة.</span><button type="button" class="text-button" data-view="templates">شاهد جميع القوالب ←</button></div>
 </section><div id="blocksEditor"></div><button class="add-block" data-action="add-menu"><span data-icon="plus"></span>إضافة عنصر جديد<span class="add-shortcut">عنوان، شرح، مثال، تمرين…</span></button></div>
           <footer class="editor-footer"><span><span class="status-dot"></span><span id="localSaveCaption">حفظ على هذا الجهاز</span></span><span id="wordCount">٠ كلمة</span></footer>
         </section>
@@ -3901,61 +3841,11 @@ body:not([data-studio-view="preview"]) :is(.classroom-tools,[data-action="assets
       <section id="templatesView" class="workspace-view gallery-view" hidden></section>
       <section id="archiveView" class="workspace-view archive-view" hidden><div class="archive-toolbar"><label class="search-field"><span data-icon="search"></span><input id="archiveSearch" type="search" placeholder="ابحث بالاسم أو المادة أو الصف…"></label><button class="button secondary" data-action="import"><span data-icon="upload"></span>استيراد مشروع</button></div><div id="archiveGrid" class="archive-grid"></div></section>
       <div class="workspace-bottom"><span><span data-icon="lock"></span>التحرير والحفظ يتمان داخل متصفحك</span><button data-action="import">لديك مشروع سابق؟ <strong>افتحه هنا</strong><span data-icon="arrow-left"></span></button></div>
-      <nav class="mobile-workspace-tabs" aria-label="التنقل الرئيسي"><button type="button" data-studio-route="editor" class="active" aria-current="page"><span class="studio-nav-icon"><span data-icon="edit"></span></span><span>ملزمتي</span></button><button type="button" data-studio-route="templates"><span class="studio-nav-icon"><span data-icon="palette"></span></span><span>القوالب</span></button><button type="button" data-studio-route="preview"><span class="studio-nav-icon"><span data-icon="eye"></span><span id="mobilePageCount">١</span></span><span>المعاينة</span></button><button type="button" data-studio-route="contact" aria-haspopup="dialog" aria-controls="developerContactDialog" aria-expanded="false"><span class="studio-nav-icon"><span data-icon="message"></span></span><span>تواصل مع المطور</span></button><button type="button" data-studio-route="more"><span class="studio-nav-icon"><span data-icon="settings"></span></span><span>المزيد</span></button></nav>
-      <dialog class="workspace-dialog studio-tools-dialog" id="studioToolsDialog" aria-labelledby="studioToolsTitle"><div class="studio-tools-head"><div><h2 id="studioToolsTitle">المزيد</h2><p>كل ما تحتاجه لإعداد المحتوى وحفظه.</p></div><button type="button" class="icon-button" data-studio-close aria-label="إغلاق الأدوات"><span data-icon="close"></span></button></div><div class="studio-tools-body"><div class="studio-tools-grid"><button type="button" class="studio-tool studio-archive-shortcut" data-studio-route="archive"><span data-icon="folder"></span><span class="studio-archive-copy"><strong>المحفوظات</strong><small>كل ملازمك في مكان واحد</small></span><span data-icon="arrow-left"></span></button><button type="button" class="studio-tool" data-action="metadata"><span data-icon="file"></span><span>بيانات الملزمة</span></button><button type="button" class="studio-tool" data-action="design"><span data-icon="palette"></span><span>الخط والتصميم</span></button><button type="button" class="studio-tool" data-action="paste"><span data-icon="clipboard"></span><span>لصق محتوى جاهز</span></button><button type="button" class="studio-tool" data-action="new"><span data-icon="plus"></span><span>ملزمة جديدة</span></button></div><h3 class="studio-tools-label">حفظ ومراجعة</h3><div class="studio-tools-actions"><button type="button" class="button" data-action="export"><span data-icon="download"></span>تنزيل المشروع</button><button type="button" class="button" data-action="import"><span data-icon="upload"></span>فتح مشروع</button><button type="button" class="button" data-action="print"><span data-icon="printer"></span>طباعة وحفظ PDF</button><button type="button" class="button" data-action="help"><span data-icon="help"></span>دليل الاستخدام</button></div><button type="button" class="studio-theme-row" data-studio-theme><span class="studio-theme-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8.5 8.5 0 1 0 10 10Z"/></svg></span><strong data-theme-label>الوضع الليلي</strong><span>المظهر</span></button></div></dialog>
+      <nav class="mobile-workspace-tabs" aria-label="التنقل الرئيسي"><button type="button" data-studio-route="editor" class="active" aria-current="page"><span class="studio-nav-icon"><span data-icon="edit"></span></span><span>ملزمتي</span></button><button type="button" data-studio-route="templates"><span class="studio-nav-icon"><span data-icon="palette"></span></span><span>القوالب</span></button><button type="button" data-studio-route="preview"><span class="studio-nav-icon"><span data-icon="eye"></span><span id="mobilePageCount">١</span></span><span>المعاينة</span></button><button type="button" data-studio-route="archive"><span class="studio-nav-icon"><span data-icon="folder"></span></span><span>المحفوظات</span></button><button type="button" data-studio-route="more"><span class="studio-nav-icon"><span data-icon="settings"></span></span><span>المزيد</span></button></nav>
+      <dialog class="workspace-dialog studio-tools-dialog" id="studioToolsDialog" aria-labelledby="studioToolsTitle"><div class="studio-tools-head"><div><h2 id="studioToolsTitle">أدوات ملزمتك</h2><p>كل ما تحتاجه لإعداد المحتوى وحفظه.</p></div><button type="button" class="icon-button" data-studio-close aria-label="إغلاق الأدوات"><span data-icon="close"></span></button></div><div class="studio-tools-body"><div class="studio-tools-grid"><button type="button" class="studio-tool" data-action="metadata"><span data-icon="file"></span><span>بيانات الملزمة</span></button><button type="button" class="studio-tool" data-action="design"><span data-icon="palette"></span><span>الخط والتصميم</span></button><button type="button" class="studio-tool" data-action="paste"><span data-icon="clipboard"></span><span>لصق محتوى جاهز</span></button><button type="button" class="studio-tool" data-action="new"><span data-icon="plus"></span><span>ملزمة جديدة</span></button></div><h3 class="studio-tools-label">حفظ ومراجعة</h3><div class="studio-tools-actions"><button type="button" class="button" data-action="export"><span data-icon="download"></span>تنزيل المشروع</button><button type="button" class="button" data-action="import"><span data-icon="upload"></span>فتح مشروع</button><button type="button" class="button" data-action="print"><span data-icon="printer"></span>طباعة وحفظ PDF</button><button type="button" class="button" data-action="help"><span data-icon="help"></span>دليل الاستخدام</button></div><button type="button" class="studio-theme-row" data-studio-theme><span class="studio-theme-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8.5 8.5 0 1 0 10 10Z"/></svg></span><strong data-theme-label>الوضع الليلي</strong><span>المظهر</span></button></div></dialog>
     </main>
   </div>
-
-  <dialog id="subscriberLoginDialog" class="subscriber-dialog" aria-labelledby="subscriberLoginTitle" aria-describedby="subscriberLoginReason">
-    <div class="subscriber-content">
-      <div class="subscriber-topline"><span class="subscriber-kicker">منصة ملزمة · دخول المشتركين</span><button type="button" class="icon-button" data-subscriber-close aria-label="إغلاق نافذة تسجيل الدخول"><span data-icon="close"></span></button></div>
-      <div class="subscriber-emblem" aria-hidden="true"><span data-icon="lock"></span></div>
-      <h2 id="subscriberLoginTitle">ملزمتك تبدأ من هنا</h2>
-      <p id="subscriberLoginReason" class="subscriber-description">أدخل بيانات اشتراكك لبدء إنشاء الملازم وتعديلها.</p>
-      <form id="subscriberLoginForm" class="subscriber-form">
-        <label for="subscriberUsername"><span>اسم المستخدم</span><input class="subscriber-input" id="subscriberUsername" name="username" type="text" dir="ltr" placeholder="malazem01" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="40" required></label>
-        <label for="subscriberCode"><span>رمز الدخول</span><div class="subscriber-code-wrap"><input class="subscriber-input" id="subscriberCode" name="password" type="password" dir="ltr" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="current-password" autocapitalize="characters" spellcheck="false" maxlength="64" required><button class="subscriber-code-toggle" id="subscriberCodeToggle" type="button" aria-label="إظهار رمز الدخول" aria-pressed="false"><span data-icon="eye"></span></button></div></label>
-        <label class="subscriber-remember"><input id="subscriberRemember" type="checkbox">تذكر دخولي على هذا الجهاز لمدة ٧ أيام</label>
-        <div id="subscriberLoginError" class="subscriber-error" role="alert" aria-live="polite" hidden></div>
-        <button id="subscriberSubmit" class="button primary subscriber-submit" type="submit">تسجيل الدخول</button>
-      </form>
-      <div class="subscriber-divider">ليس لديك اشتراك؟</div>
-      <a class="subscription-telegram" href="https://t.me/Ayman_donia" target="_blank" rel="noopener noreferrer" aria-label="طلب الاشتراك عبر تليجرام لدى Ayman_donia، يفتح في نافذة جديدة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 3.3 18.6 20c-.2 1.2-.9 1.5-1.9.9l-5-3.7-2.4 2.4c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L5.9 13.5 1 12c-1.1-.3-1.1-1.1.2-1.6L20.4 3c.9-.3 1.8.2 1.5.3Z"/></svg><span><strong>طلب الاشتراك عبر تليجرام</strong><small dir="ltr">@Ayman_donia</small></span></a>
-      <button type="button" class="text-button subscriber-browse" data-subscriber-close>متابعة التصفح كزائر</button>
-    </div>
-  </dialog>
-  <dialog id="subscriberAccountDialog" class="subscriber-dialog" aria-labelledby="subscriberAccountTitle">
-    <div class="subscriber-content">
-      <div class="subscriber-topline"><span class="subscriber-kicker">حسابك في منصة ملزمة</span><button type="button" class="icon-button" data-subscriber-account-close aria-label="إغلاق نافذة الحساب"><span data-icon="close"></span></button></div>
-      <div class="subscriber-emblem" aria-hidden="true"><span data-icon="check-circle"></span></div>
-      <h2 id="subscriberAccountTitle">أنت مسجل الدخول</h2><p class="subscriber-description">يمكنك إنشاء الملازم وتعديل النصوص. الحفظ يتم داخل متصفحك على هذا الجهاز.</p>
-      <strong id="subscriberMemberName" class="subscriber-member-name"></strong>
-      <div class="subscriber-member-actions"><button type="button" class="button primary" data-subscriber-account-close>متابعة العمل</button><button type="button" id="subscriberLogout" class="button secondary">تسجيل الخروج</button></div>
-    </div>
-  </dialog>
-  <script type="application/json" id="localSubscriberAccounts">{"version":"local-subscribers-20261018-v1","iterations":210000,"accounts":[{"username":"malazem01","salt":"c0473fb40e4891579164a9501d040c0a","hash":"980843bdd3806e2412f729d864e8220646d323200bb09806d0e1f1ac533ab54a"},{"username":"malazem02","salt":"7fe487716d2cde98d326ffdd0223879f","hash":"bfec0694ee44209aedb9f9cea78235f294a9a49b56110abe684c7af250b56e82"},{"username":"malazem03","salt":"9e66d44a8d4447d3ec4da9fba680493b","hash":"93f3676aadb3f928d6649a8a8cb55d5cd9f9a2c41f3408e063e04cdc923074c4"},{"username":"malazem04","salt":"526b6b7109b9afdb91aa75fe848c657c","hash":"b35bf4cb8e74b1e1e9c083ed6cc300631b920ad0a65aff4af21c326786ac03ac"},{"username":"malazem05","salt":"d29f617ab3213da0fc8350dc8f610648","hash":"72b49e4f2ff02ceacaedb0eaf0ad8bd6eff4753e2c5a8feb887a19f6d157451d"},{"username":"malazem06","salt":"e1035771a70939bad0a8570db65ccd37","hash":"c7b0069e393c330fe3d3ab1cf5b11b67cd60c25b4605bdd062a39bbc29155064"},{"username":"malazem07","salt":"29f350687dc671ef6898bebf3b13aec0","hash":"969acee21f736ef4e8a962e53e3ee64c8ac6db7a673a0a8b61a6f1ea2a8aba7e"},{"username":"malazem08","salt":"89b398741600228dd05655b98f4b6e9f","hash":"17db8653cdeb97d9e9da8d12feb5d1f553eb199741859adc25d9c6aab36d6d32"},{"username":"malazem09","salt":"53b7f033246949e5df5c2dab7a6cbc5d","hash":"aa684093da16de92ea24cc6ad63efc9495db7a4d48320b23c21e5dadcb81aac1"},{"username":"malazem10","salt":"0dcb917e697244eef94854816233ec07","hash":"d407df5bbc95036f018153298dcb2817f7fe31f40db8242562466294e104f127"},{"username":"malazem11","salt":"ef907463420714defc7d085ffec13c94","hash":"3a58e112e08b29476f507e15b753f116eae8227ba229bad77722ea9822f10309"},{"username":"malazem12","salt":"37c3ee3f210cc511df61299000c1b362","hash":"38b3a159130f6840ac705232d116841e440392a46b7a65db2b9382115836b405"},{"username":"malazem13","salt":"8a74014d7b5e014310ddc6d9c9131174","hash":"af0a2e90178854021ed9fd4273eb1febdb270b58983a1eedc3d408aa3f3d695d"},{"username":"malazem14","salt":"8108219edd4fd8f8fb21d221dcd89464","hash":"ae3bb9493282a707e76a516140f7e0e4cd522d0fc972bae21442aeac05900254"},{"username":"malazem15","salt":"e189bfc1a755ae4bf5f8588cff56cff8","hash":"7f76d51e71fdffece682799b358a8c46f721b8b462d984858b640c5f129b8768"},{"username":"malazem16","salt":"5bf4c91ada104ac6e2e93224908cde24","hash":"458b76c4c76af08e6b337753eefbc07b8b6372419cc9dc075b019bd7ede71f5b"},{"username":"malazem17","salt":"b6d7ccd78dbc666a7796f0436548bfdd","hash":"8c9f172227b70d057e4d35a7026d0e40f376ab246ba9f02d81518db87b7a9927"},{"username":"malazem18","salt":"d791a4925803a659f89280dac671970f","hash":"c75ce028b38f858326172e048cd6377beea1082b1907e4051bb8adf106ba1bd1"},{"username":"malazem19","salt":"7cd7e7fdcf89f0d36dd404a57cc03797","hash":"5786f006e32917596d01c133447a2b0fcfc9c985d3a005d3853ecda6d6d048b0"},{"username":"malazem20","salt":"ad289c5fe03091b79b8782e5bef6a297","hash":"73a81c2a3834880893b08186b02881bf6ff881a571ca3ba3a735bddf71559473"},{"username":"malazem21","salt":"6175e758bc73fcb044f712756b33ea40","hash":"c8bcb3d668e55fc512cc2b165e190eb359083c0f6e3b91a6ec666cc961048d92"},{"username":"malazem22","salt":"bf38a94ca4185065005c3fe608422d00","hash":"9810b80b743e7584869f1c5a843824ff9a4760f4c3351aee82d3f94e29fe8b32"},{"username":"malazem23","salt":"d1fc993a1969a3cff0fe91aed383b7a4","hash":"36fce63e9665c9b967a5d1e2cf977f15a2ca775acaadd8e78e086890472ded9b"},{"username":"malazem24","salt":"f5ca8f454499810182d012bb824450b9","hash":"6923a89f8c5079769267587d5dcaa234bc0dfc8a35090915f02ef3e539ba8768"},{"username":"malazem25","salt":"f5c7ac4beeef4b8021ad4b584d500694","hash":"695eae14f8d42859dcf46cd8a525d71743a3d2baee422bbe28380c97d3ced400"},{"username":"malazem26","salt":"eac8537ac0bb6c9dc1c7dc77c463b6a5","hash":"95ee19783dc242d1cfdff3442b4259ddb6696b9c170a83b64933928a9ac86318"},{"username":"malazem27","salt":"2afb2b7e4e5c19a168b2595fc7af8724","hash":"74c22dcab26f9b4e4be11b49d863fbe9018b689210a191121406316e35e46369"},{"username":"malazem28","salt":"d49fa63e1f11c96bd5aa9ef5eeb7c6f0","hash":"1ec1767b2c65488750b8a9efaffc844b3a213f7b16207bbd94b30dad763851aa"},{"username":"malazem29","salt":"3ece58968b49b926d889c47a43ae5e45","hash":"f0f41244c444d4dc2580f3132087ec81b193c02e616630bb12a63c2a9d20b0b0"},{"username":"malazem30","salt":"3430227bb5c681b64200ca3c399729ad","hash":"4142853cfe63b2f6b1f459cfca5bcadcc7cc44ad2a36abb9c9dbb6d246c7cb93"},{"username":"malazem31","salt":"4e8918c780bc6ea383c771e1e846172c","hash":"f7bd2cf9a0db50ae8b8157429002de6adeef3e82741d904d2f2c3dc46ad379db"},{"username":"malazem32","salt":"e92eae42a0f210f87f27d9002cfbbb02","hash":"e992de74e04aa50de05a9bfe55c00abf883fd73ca9cfe05b92885fd31ffc314a"},{"username":"malazem33","salt":"fa703a273733dcd866e4b9668946dcc3","hash":"b71bfd780c5b5d925f015784f569c408380e14e69e349b5e7211eb197de9eed0"},{"username":"malazem34","salt":"fd460a0f174adfe1b9e34ed49981df9a","hash":"fcf1ababf4f94a2620a4794bfb94f34f942acf83000751babdd3ac666733af89"},{"username":"malazem35","salt":"69f90984e1be9f7f91b78bd28703f66a","hash":"9fe399cb263cd5cad6c9f65fc926d35cd7da79b6c7bdc50d2d476a58a07aef05"},{"username":"malazem36","salt":"0280f1276ffda7e65ef5aa46dc28479a","hash":"c576e9c00e6bc349d496a817ec22ee601fa8d272b454e63fd6910b8a0cdd1937"},{"username":"malazem37","salt":"2c8875f8bba51cd6e928ce8aefe79a65","hash":"c04b02530fcf718a5ac7b38937f72321b59ccec8635d99d34730a00cd77ff502"},{"username":"malazem38","salt":"52c40990da4a95311d4457c432ab29ff","hash":"cec615261417abcec2c21d511d8ce944cac57a93f5cf9e4f0d3e42f75e58fbdb"},{"username":"malazem39","salt":"e14b46c1dc5e8da2d457c282c337dd48","hash":"be75ab6e83278fa12fda041589bc015bc9e6da3edb94c7eb46361c7d03f1c802"},{"username":"malazem40","salt":"e4ce872efdac5d6314a53cbe21e89403","hash":"d926871a5ce2b984f6b02016d92bb9bd71bbc90c7dbc08328dde08a22e9e88fb"},{"username":"malazem41","salt":"da0715f7dad9c5f480bb71c458b9cc15","hash":"a338dad036a745423b1696b37855ec76dc07f26118e2e48c265f3d040dee5076"},{"username":"malazem42","salt":"d24798384919efbb556a46e482227e06","hash":"e15822470c0e956032c083e16d2ede3d84b8e85c388bc6c07795fa05aac0b171"},{"username":"malazem43","salt":"d901bd9ce32eefc5c8bea43fd660ebf5","hash":"6eed4cdc5acbfc3837f159c3b4a58f3dc8840c6e9f214941af56a13d8717dc4b"},{"username":"malazem44","salt":"6e5ae6f90e125a8300ddd4cf11101701","hash":"2a02e8f463cc26586e92fe2e806a1cc0d3c5a626e5aba45de94a9e9897158495"},{"username":"malazem45","salt":"2d50b5e6d8bdc25a36462f7b0b09097a","hash":"e84c12544d3edb7a9c3a424a389b508a1ce00ebf0dc0c9d833060706a3f123a0"},{"username":"malazem46","salt":"2c896bf04cd84cc1e7cb6d77504f6ee9","hash":"11e47a575effd9ab2c00f4f0221dd8d3962503c1fed0f5826a6a6f9a1a365228"},{"username":"malazem47","salt":"e597367831c4d751811dc6217e04dde0","hash":"6ce63d14f8a661c57148f679d3f9fce3a670990b47a213e236d08e6e270515b0"},{"username":"malazem48","salt":"fe744f2ce3327bef3677070c2a0649d5","hash":"d359be6645ab877b4d8f1ddfeafff3b9118c1b1b63f3173a735b6e725a4d640a"},{"username":"malazem49","salt":"1cbaafc932264cb5af76cc2635536818","hash":"07c486c8220e79b48538de1f346974b198e393c42f0b2e27d645291376ad53f2"},{"username":"malazem50","salt":"14d591990c1871489e54d9318781e7bd","hash":"c1c4615176b034acea32e242b62a66d81d3e4e53422c4c0362435d55da6dfbeb"}]}</script>
-
   <dialog id="workspaceDialog" class="workspace-dialog"><div class="dialog-head"><div><h2 id="dialogTitle"></h2><p id="dialogSubtitle"></p></div><button class="icon-button" id="closeDialog" aria-label="إغلاق"><span data-icon="close"></span></button></div><div id="dialogBody" class="dialog-body"></div><div id="dialogActions" class="dialog-actions"></div></dialog>
-
-  <dialog id="developerContactDialog" class="developer-contact-dialog" aria-labelledby="developerContactTitle" aria-describedby="developerContactDescription">
-    <div class="developer-contact-content">
-      <div class="developer-contact-topline"><span class="developer-contact-kicker">تواصل مع المطور</span><button type="button" class="developer-contact-close" data-developer-close aria-label="إغلاق نافذة التواصل"><span data-icon="close"></span></button></div>
-      <div class="developer-contact-emblem" aria-hidden="true"><span data-icon="message"></span></div>
-      <h2 id="developerContactTitle">خلّ نحول فكرتك إلى واقع</h2>
-      <p id="developerContactDescription">اذا عندك اي افكار تطبيقات او مشاريع حاب تحولها الى واقع او اي شي ببالك تواصل وياي على</p>
-      <div class="developer-contact-links">
-        <a class="developer-contact-link developer-contact-whatsapp" href="https://wa.me/9647732266723" target="_blank" rel="noopener noreferrer" aria-label="تواصل مع المطور على واتساب، يفتح في نافذة جديدة">
-          <span class="developer-contact-brand" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.5 0 .2 5.3.2 11.9c0 2.1.6 4.2 1.6 6L.1 24l6.2-1.6a11.9 11.9 0 0 0 5.7 1.5h.1c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.5ZM12.1 21.9a9.9 9.9 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.3c0-5.5 4.4-9.9 9.9-9.9 2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.4 9.9-9.9 9.9Zm5.4-7.4c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.1 8.1 0 0 1-2.4-1.5 9.1 9.1 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4Z"/></svg></span>
-          <span class="developer-contact-label"><strong>واتساب</strong><small dir="ltr">+964 773 226 6723</small></span><span data-icon="arrow-left"></span>
-        </a>
-        <a class="developer-contact-link developer-contact-telegram" href="https://t.me/Ayman_donia" target="_blank" rel="noopener noreferrer" aria-label="تواصل مع المطور على تليجرام، يفتح في نافذة جديدة">
-          <span class="developer-contact-brand" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.9 3.3 18.6 20c-.2 1.2-.9 1.5-1.9.9l-5-3.7-2.4 2.4c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L5.9 13.5 1 12c-1.1-.3-1.1-1.1.2-1.6L20.4 3c.9-.3 1.8.2 1.5.3Z"/></svg></span>
-          <span class="developer-contact-label"><strong>تليجرام</strong><small dir="ltr">@Ayman_donia</small></span><span data-icon="arrow-left"></span>
-        </a>
-      </div>
-    </div>
-    <div class="developer-contact-footer"><button type="button" class="developer-contact-skip" data-developer-close autofocus>تخطي الآن<span data-icon="arrow-left"></span></button></div>
-  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <input id="projectFileInput" type="file" accept=".json,.malazem,application/json" hidden>
   <input id="imageFileInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
@@ -4158,7 +4048,6 @@ function deriveBlocks(p){
 
 // icons.js
 const ICON_PATHS={
- message:'M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-3 3V11.5A8.5 8.5 0 0 1 9.5 3h3a8.5 8.5 0 0 1 8.5 8.5ZM7 10h8m-8 4h5',
  plus:'M12 5v14M5 12h14',minus:'M5 12h14',close:'m6 6 12 12M6 18 18 6',
  edit:'m15 4 5 5M4 20l4-1L20 7a2.1 2.1 0 0 0-3-3L5 16l-1 4ZM12 20h8',
  palette:'M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.6-3.2c-.8-1-.1-2.8 1.3-2.8H18a3 3 0 0 0 3-3 9 9 0 0 0-9-9Zm-5 8h.01M9 7h.01m5 0h.01m3 4h.01',
@@ -4610,136 +4499,14 @@ let db=new ProjectStore(),storageReady=false,saveQueue=Promise.resolve(),current
 let workspaceLocal;
 const clone=v=>structuredClone(v);
 const typeOptions=(selected,textOnly=false)=>Object.entries(TYPES).filter(([key])=>!textOnly||!['image','table','equation','icon'].includes(key)).map(([key,name])=>`<option value="${key}" ${key===selected?'selected':''}>${name}</option>`).join('');
+// All features are available in this browser-local workspace.
 let workspaceReady=false;
-// Local subscription accounts. Password codes are verified with salted PBKDF2.
-const LOCAL_AUTH=JSON.parse(document.getElementById('localSubscriberAccounts').textContent);
-const AUTH_SESSION_KEY='malazem.local-subscriber.session.v1';
-const AUTH_THROTTLE_KEY='malazem.local-subscriber.attempts.v1';
-const AUTH_LOGOUT_KEY='malazem.local-subscriber.logout.v1';
-const subscriberLocal=(()=>{try{return window.localStorage;}catch{return null;}})();
-const subscriberTab=(()=>{try{return window.sessionStorage;}catch{return null;}})();
-let subscriberSession=null,pendingSubscriberAction=null,subscriberBusy=false,subscriberAttempt=0;
-const authStore={get(storage,key){try{return JSON.parse(storage.getItem(key));}catch{return null;}},set(storage,key,value){try{storage.setItem(key,JSON.stringify(value));return true;}catch{return false;}},remove(storage,key){try{storage.removeItem(key);}catch{}}};
-function subscriberRecord(){
-  const s=subscriberSession;
-  if(!s||s.version!==LOCAL_AUTH.version||!Number.isFinite(s.expiresAt)||s.expiresAt<=Date.now())return null;
-  return LOCAL_AUTH.accounts.find(a=>a.username===s.username&&a.hash===s.fingerprint)||null;
-}
-function subscriberSignedIn(){return Boolean(subscriberRecord());}
-function refreshSubscriberUI(){
-  const member=subscriberRecord();document.body.classList.toggle('guest-mode',!member);
-  $('subscriberStatusTitle').textContent=member?'أهلًا بك، '+member.username:'أنت تتصفح بوضع الزائر';
-  $('subscriberStatusDescription').textContent=member?'يمكنك الآن إنشاء الملازم وتعديلها وحفظها.':'تصفح التطبيق واختر القالب، وسجل الدخول للإنشاء والتعديل.';
-  $('subscriberAccountButton').textContent=member?'حسابي':'تسجيل الدخول';
-  $('subscriberAccountButton').setAttribute('aria-controls',member?'subscriberAccountDialog':'subscriberLoginDialog');
-  setEditorAccess();updateHistoryButtons();
-  if(!member){if($('subscriberAccountDialog').open)$('subscriberAccountDialog').close();$('saveStatus').textContent='وضع الزائر · التصفح فقط';$('localSaveCaption').textContent='سجل الدخول لحفظ تعديلاتك';}
-}
-function showSubscriberLogin(action=null){
-  if(subscriberSignedIn())return;
-  pendingSubscriberAction=action;
-  if($('studioToolsDialog').open)$('studioToolsDialog').close();
-  if($('workspaceDialog').open)closeDialog();
-  $('subscriberLoginReason').textContent=action==='new'?'سجل الدخول لإنشاء ملزمتك الجديدة.':action==='edit'?'سجل الدخول لتعديل النص ومحتوى الملزمة.':'أدخل بيانات اشتراكك لبدء إنشاء الملازم وتعديلها.';
-  $('subscriberLoginError').hidden=true;
-  const modal=$('subscriberLoginDialog');if(!modal.open){modal.showModal();requestAnimationFrame(()=>$('subscriberUsername').focus());}
-}
-function closeSubscriberLogin(){pendingSubscriberAction=null;$('subscriberLoginDialog').close();}
-function focusSubscriberEditor(){
-  studioNavigate('editor');
-  requestAnimationFrame(()=>{const selected=$('blocksEditor').querySelector('.content-block.selected')||$('blocksEditor').firstElementChild;selected?.querySelector('textarea,input')?.focus();});
-}
-function requestSubscriberEdit(){if(!requireWorkspace('edit'))return;focusSubscriberEditor();}
-function subscriberAccount(){
-  const member=subscriberRecord();if(!member){showSubscriberLogin();return;}
-  $('subscriberMemberName').textContent=member.username;
-  if(!$('subscriberAccountDialog').open)$('subscriberAccountDialog').showModal();
-}
-function subscriberError(message){$('subscriberLoginError').textContent=message;$('subscriberLoginError').hidden=false;}
-async function verifySubscriberCode(code,account){
-  if(!globalThis.crypto?.subtle)throw new Error('استخدم إصدارًا حديثًا من Chrome أو Edge أو Safari لتسجيل الدخول محليًا.');
-  const text=new TextEncoder();
-  const key=await crypto.subtle.importKey('raw',text.encode(code),'PBKDF2',false,['deriveBits']);
-  const salt=Uint8Array.from(account.salt.match(/.{2}/g),v=>parseInt(v,16));
-  const digest=await crypto.subtle.deriveBits({name:'PBKDF2',salt,iterations:LOCAL_AUTH.iterations,hash:'SHA-256'},key,256);
-  const hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');
-  return hash===account.hash;
-}
-async function submitSubscriberLogin(event){
-  event.preventDefault();if(subscriberBusy)return;
-  const username=$('subscriberUsername').value.trim().toLowerCase();
-  const code=$('subscriberCode').value.replace(/[\s-]/g,'').toUpperCase();
-  if(!username||!code){subscriberError('أدخل اسم المستخدم ورمز الدخول.');return;}
-  const attempts=authStore.get(subscriberLocal,AUTH_THROTTLE_KEY)||{};
-  if(attempts.until>Date.now()){subscriberError('محاولات كثيرة. أعد المحاولة بعد '+Math.ceil((attempts.until-Date.now())/1000)+' ثانية.');return;}
-  const attempt=++subscriberAttempt;subscriberBusy=true;$('subscriberSubmit').disabled=true;$('subscriberSubmit').textContent='جارٍ التحقق…';$('subscriberLoginError').hidden=true;
-  try{
-    const account=LOCAL_AUTH.accounts.find(a=>a.username===username);
-    const valid=await verifySubscriberCode(code,account||LOCAL_AUTH.accounts[0]);
-    if(attempt!==subscriberAttempt||!$('subscriberLoginDialog').open)return;
-    if(!account||!valid){
-      const count=(attempts.last>Date.now()-600000?Number(attempts.count)||0:0)+1;
-      authStore.set(subscriberLocal,AUTH_THROTTLE_KEY,{count,last:Date.now(),until:count>=5?Date.now()+30000:0});
-      subscriberError(count>=5?'تعذر تسجيل الدخول. انتظر ٣٠ ثانية قبل المحاولة مجددًا.':'اسم المستخدم أو رمز الدخول غير صحيح.');return;
-    }
-    authStore.remove(subscriberLocal,AUTH_THROTTLE_KEY);
-    const remember=$('subscriberRemember').checked;
-    subscriberSession={username:account.username,fingerprint:account.hash,version:LOCAL_AUTH.version,expiresAt:Date.now()+(remember?7*86400000:12*3600000)};
-    authStore.remove(subscriberLocal,AUTH_SESSION_KEY);authStore.remove(subscriberTab,AUTH_SESSION_KEY);
-    authStore.set(remember?subscriberLocal:subscriberTab,AUTH_SESSION_KEY,subscriberSession);
-    const next=pendingSubscriberAction;pendingSubscriberAction=null;$('subscriberLoginDialog').close();$('subscriberCode').value='';
-    refreshSubscriberUI();await persistNow();toast('تم تسجيل الدخول. يمكنك الآن إنشاء الملازم وتعديلها.');
-    if(next==='new')openMetadata(true);else if(next==='edit')focusSubscriberEditor();
-  }catch(error){if(attempt===subscriberAttempt)subscriberError(error.message||'تعذر تسجيل الدخول. حاول مرة أخرى.');}
-  finally{subscriberBusy=false;$('subscriberSubmit').disabled=false;$('subscriberSubmit').textContent='تسجيل الدخول';}
-}
-async function signOutSubscriber(){
-  await persistNow();subscriberSession=null;pendingSubscriberAction=null;
-  authStore.remove(subscriberLocal,AUTH_SESSION_KEY);authStore.remove(subscriberTab,AUTH_SESSION_KEY);authStore.set(subscriberLocal,AUTH_LOGOUT_KEY,Date.now());
-  $('subscriberAccountDialog').close();if($('workspaceDialog').open)closeDialog();refreshSubscriberUI();toast('تم تسجيل الخروج. يمكنك متابعة التصفح واختيار القوالب.');
-}
-function previewGuestTemplate(t){
-  if(!hasWorkspace())return;
-  project.settings=templateSettings(t,project.settings);revision++;layoutRevision=-1;updateHeader();scheduleLayout();renderTemplates();
-  toast('تم اختيار قالب '+t.name+' للمعاينة. سجل الدخول لإنشاء ملزمتك وتعديلها.');
-}
-function initSubscriberAccess(){
-  subscriberSession=authStore.get(subscriberTab,AUTH_SESSION_KEY)||authStore.get(subscriberLocal,AUTH_SESSION_KEY);
-  if(!subscriberRecord())subscriberSession=null;
-  $('subscriberAccountButton').onclick=subscriberAccount;
-  $('subscriberLoginForm').onsubmit=submitSubscriberLogin;
-  document.querySelectorAll('[data-subscriber-close]').forEach(button=>button.onclick=closeSubscriberLogin);
-  document.querySelectorAll('[data-subscriber-account-close]').forEach(button=>button.onclick=()=>$('subscriberAccountDialog').close());
-  $('subscriberLogout').onclick=signOutSubscriber;
-  $('subscriberCodeToggle').onclick=()=>{const input=$('subscriberCode'),show=input.type==='password';input.type=show?'text':'password';$('subscriberCodeToggle').setAttribute('aria-label',show?'إخفاء رمز الدخول':'إظهار رمز الدخول');$('subscriberCodeToggle').setAttribute('aria-pressed',String(show));input.focus();};
-  $('subscriberLoginDialog').addEventListener('close',()=>{subscriberAttempt++;pendingSubscriberAction=null;$('subscriberCode').value='';$('subscriberCode').type='password';$('subscriberCodeToggle').setAttribute('aria-label','إظهار رمز الدخول');$('subscriberCodeToggle').setAttribute('aria-pressed','false');});
-  for(const id of ['subscriberLoginDialog','subscriberAccountDialog'])$(id).addEventListener('click',event=>{if(event.target!==$(id))return;const rect=$(id).getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)$(id).close();});
-  document.addEventListener('click',event=>{
-    if(subscriberSignedIn())return;
-    const field=event.target.closest('#blocksEditor textarea,#blocksEditor input,#blocksEditor select,#blocksEditor button,#activeType');
-    if(field){event.preventDefault();event.stopImmediatePropagation();showSubscriberLogin('edit');}
-  },true);
-  $('blocksEditor').addEventListener('beforeinput',event=>{if(!subscriberSignedIn()){event.preventDefault();showSubscriberLogin('edit');}},true);
-  document.addEventListener('keydown',event=>{if(!$('subscriberLoginDialog').open&&!$('subscriberAccountDialog').open)return;if((event.ctrlKey||event.metaKey)&&['s','p','z'].includes(event.key.toLowerCase())){event.preventDefault();event.stopImmediatePropagation();}},true);
-  window.addEventListener('storage',event=>{
-    if(event.key===AUTH_LOGOUT_KEY){subscriberSession=null;authStore.remove(subscriberTab,AUTH_SESSION_KEY);}
-    else if(event.key===AUTH_SESSION_KEY)subscriberSession=authStore.get(subscriberTab,AUTH_SESSION_KEY)||authStore.get(subscriberLocal,AUTH_SESSION_KEY);
-    else return;
-    if(!subscriberSignedIn()&&$('workspaceDialog').open)closeDialog();refreshSubscriberUI();
-  });
-  setInterval(()=>{if(subscriberSession&&!subscriberRecord()){subscriberSession=null;authStore.remove(subscriberTab,AUTH_SESSION_KEY);authStore.remove(subscriberLocal,AUTH_SESSION_KEY);if($('workspaceDialog').open)closeDialog();refreshSubscriberUI();toast('انتهت جلسة الدخول. سجل الدخول لمتابعة التعديل.');}},30000);
-  refreshSubscriberUI();
-}
-
-function hasWorkspace(){return workspaceReady&&Boolean(project);}
-function canEditProject(){return hasWorkspace()&&subscriberSignedIn();}
-function requireWorkspace(action='edit'){if(!hasWorkspace())return false;if(subscriberSignedIn())return true;showSubscriberLogin(action);return false;}
+function canEditProject(){return workspaceReady&&Boolean(project);}
+function requireWorkspace(){return canEditProject();}
 function setEditorAccess(){
-  const allowed=subscriberSignedIn();
-  $('blocksEditor').querySelectorAll('textarea,input').forEach(field=>{field.readOnly=!allowed;field.setAttribute('aria-readonly',String(!allowed));if(['checkbox','range'].includes(field.type))field.disabled=!allowed;});
-  $('blocksEditor').querySelectorAll('select').forEach(field=>field.disabled=!allowed);
+  $('blocksEditor').querySelectorAll('textarea,input').forEach(field=>{field.readOnly=false;field.setAttribute('aria-readonly','false');if(['checkbox','range'].includes(field.type))field.disabled=false;});
   document.querySelectorAll('.format-toolbar button,[data-add],.add-block').forEach(button=>button.disabled=false);
-  $('activeType').setAttribute('aria-readonly',String(!allowed));
+  $('activeType').setAttribute('aria-readonly','false');
 }
 
 function toast(message){
@@ -4755,12 +4522,12 @@ function editProject(mutation,{repaint=false,force=false}={}){
   remember(force);mutation();
   revision++;project.updatedAt=new Date().toISOString();updateHeader();updateCounts();scheduleSave();scheduleLayout();if(repaint)renderEditor();updateHistoryButtons();
 }
-function updateHistoryButtons(){$('undoButton').disabled=!subscriberSignedIn()||!history.length;$('redoButton').disabled=!subscriberSignedIn()||!future.length;}
+function updateHistoryButtons(){$('undoButton').disabled=!history.length;$('redoButton').disabled=!future.length;}
 function updateHeader(){const showcase=isShowcaseProject(project);$('showcaseWelcome').hidden=!showcase;document.body.classList.toggle('showcase-mode',showcase);const name=$('projectName');name.innerHTML=`${escapeHTML(project.meta.title)} ${icon('chevron-down')}`;document.title=`${project.meta.title} — استوديو الملازم`;}
 function updateCounts(){$('wordCount').textContent=`${arabicNumber(documentWordCount())} كلمة`;}
 function scheduleSave(){if(!canEditProject())return;clearTimeout(saveTimer);$('saveStatus').textContent=storageReady?'تغييرات جديدة…':'الحفظ المحلي غير متاح — نزّل المشروع';if($('localSaveCaption'))$('localSaveCaption').textContent='تغييرات قيد الحفظ';saveTimer=setTimeout(()=>persistNow(),700);}
 async function persistNow(){
-  clearTimeout(saveTimer);saveTimer=null;if(!hasWorkspace())return false;if(!subscriberSignedIn())return true;
+  clearTimeout(saveTimer);saveTimer=null;if(!canEditProject()||!project)return false;
   const snapshot=clone(project),version=revision;
   const rememberInArchive=()=>{archive=[snapshot,...archive.filter(p=>p.id!==snapshot.id)];renderRecent();if(currentView==='archive')renderArchive();};
   if(!storageReady){rememberInArchive();$('saveStatus').textContent='محفوظ لهذه الجلسة فقط — نزّل المشروع';if($('localSaveCaption'))$('localSaveCaption').textContent='حفظ مؤقت لهذه الجلسة';return true;}
@@ -4770,13 +4537,13 @@ async function persistNow(){
   rememberInArchive();return true;
 }
 let projectSwitching=false;
-async function switchProjectSafely(resolveNext,{browse=false}={}){
-  if(!(browse?hasWorkspace():requireWorkspace())||projectSwitching)return false;
+async function switchProjectSafely(resolveNext){
+  if(!requireWorkspace()||projectSwitching)return false;
   projectSwitching=true;
   try{
     let version,next;
     do{version=revision;if(!await persistNow())return false;if(version!==revision)continue;next=await resolveNext();if(!next)return false;}while(version!==revision);
-    return loadProject(next,{browse})!==false;
+    return loadProject(next)!==false;
   }catch(error){toast(error.message||'تعذّر فتح الملزمة.');return false;}finally{projectSwitching=false;}
 }
 function autoSize(area){area.style.height='auto';area.style.height=`${Math.max(28,area.scrollHeight)}px`;}
@@ -4817,7 +4584,7 @@ function addType(type){if(!requireWorkspace())return;
 }
 function scheduleLayout(){clearTimeout(layoutTimer);layoutTimer=setTimeout(()=>runLayout(),500);}
 async function runLayout(){
-  clearTimeout(layoutTimer);layoutTimer=null;if(!hasWorkspace())return;if(layoutTask)return layoutTask;
+  clearTimeout(layoutTimer);layoutTimer=null;if(!canEditProject())return;if(layoutTask)return layoutTask;
   layoutTask=(async()=>{while(layoutRevision!==revision){const version=revision,snapshot=clone(project);$('previewLoading').hidden=false;try{const result=await paginateProject(snapshot,$('measureRoot'));if(version!==revision)continue;layoutResult=result;layoutRevision=version;paintPreview();}catch(e){layoutRevision=-1;layoutResult=null;pageObserver?.disconnect();$('previewPages').replaceChildren();$('printRoot').replaceChildren();$('pageRail').replaceChildren();$('pagePosition').textContent='المعاينة غير متاحة';$('mobilePageCount').textContent='—';document.querySelectorAll('[data-action=prev-page],[data-action=next-page]').forEach(button=>button.disabled=true);toast(e.message||'تعذّر تحديث الصفحات.');$('previewStatus').textContent='تحتاج المعاينة إلى مراجعة';break;}finally{$('previewLoading').hidden=true;}}})().finally(()=>{layoutTask=null;});return layoutTask;
 }
 function updateZoom(){
@@ -4848,7 +4615,7 @@ function templatePreviewProject(t){
   p.settings=templateSettings(t,p.settings);return p;
 }
 function renderTemplates(){
-  $('templatesView').innerHTML=`<div class="templates-overview"><div><h2>كل ملزمة، بهوية مختلفة</h2><p>استعرض النموذج كاملًا بأي قالب، من الغلاف والفهرس إلى الصور والمعادلات والتمارين. اختر التصميم الذي يناسب مادتك، وشاهد أثره في الصفحات.</p></div><div class="templates-total">${arabicNumber(TEMPLATES.length)}<small>قالبًا متاحًا</small></div></div><div class="templates-grid">${TEMPLATES.map((t,i)=>`<article class="template-card ${project.settings.template===t.id?'active':''}" data-template-card="${t.id}"><div class="template-art" style="--template-color:${t.color};--template-bg:${t.bg}" aria-label="غلاف وصفحة داخلية من قالب ${t.name}"><span class="template-number">${String(i+1).padStart(2,'0')}</span>${t.fresh?'<span class="template-new">جديد</span>':''}</div><div class="template-info"><div class="template-meta"><h3>${t.name}</h3><span class="template-kind">${t.label}</span></div><p>${t.description}</p><div class="template-features"><span>${icon('book')}غلاف متكامل</span><span>${icon('file')}٨ فصول وقسم إجابات</span><span>${icon('printer')}A4</span></div><button type="button" class="button ${project.settings.template===t.id?'primary':'secondary'}" data-template="${t.id}">${project.settings.template===t.id?icon('check')+'القالب الحالي':icon('palette')+(subscriberSignedIn()?'تطبيق على ملزمتي':'اختيار القالب')}</button><button type="button" class="button demo-button" data-template-demo="${t.id}">${icon('eye')}استعراض النموذج</button></div></article>`).join('')}</div><div class="template-notice">${icon('palette')}<div><strong>كل التفاصيل تحت يدك</strong><p>عدّل الخط والهوامش والألوان، أو اختر غلافًا من تصميم آخر واحفظ إعداداتك كقالب شخصي.</p><div class="template-demo-note">تصفح القوالب واختر تصميمك مجانًا. إنشاء الملازم وتعديلها متاحان بعد تسجيل الدخول.</div></div><button class="button secondary" data-action="design">تخصيص التصميم</button></div>`;
+  $('templatesView').innerHTML=`<div class="templates-overview"><div><h2>كل ملزمة، بهوية مختلفة</h2><p>استعرض النموذج كاملًا بأي قالب، من الغلاف والفهرس إلى الصور والمعادلات والتمارين. اختر التصميم الذي يناسب مادتك، وشاهد أثره في الصفحات.</p></div><div class="templates-total">${arabicNumber(TEMPLATES.length)}<small>قالبًا متاحًا</small></div></div><div class="templates-grid">${TEMPLATES.map((t,i)=>`<article class="template-card ${project.settings.template===t.id?'active':''}" data-template-card="${t.id}"><div class="template-art" style="--template-color:${t.color};--template-bg:${t.bg}" aria-label="غلاف وصفحة داخلية من قالب ${t.name}"><span class="template-number">${String(i+1).padStart(2,'0')}</span>${t.fresh?'<span class="template-new">جديد</span>':''}</div><div class="template-info"><div class="template-meta"><h3>${t.name}</h3><span class="template-kind">${t.label}</span></div><p>${t.description}</p><div class="template-features"><span>${icon('book')}غلاف متكامل</span><span>${icon('file')}٨ فصول وقسم إجابات</span><span>${icon('printer')}A4</span></div><button type="button" class="button ${project.settings.template===t.id?'primary':'secondary'}" data-template="${t.id}">${project.settings.template===t.id?icon('check')+'القالب الحالي':icon('palette')+'تطبيق على ملزمتي'}</button><button type="button" class="button demo-button" data-template-demo="${t.id}">${icon('eye')}استعراض النموذج</button></div></article>`).join('')}</div><div class="template-notice">${icon('palette')}<div><strong>كل التفاصيل تحت يدك</strong><p>عدّل الخط والهوامش والألوان، أو اختر غلافًا من تصميم آخر واحفظ إعداداتك كقالب شخصي.</p><div class="template-demo-note">جميع القوالب وأدوات التحرير متاحة للجميع. جرّب النموذج أو طبّق تصميمك على ملزمتك.</div></div><button class="button secondary" data-action="design">تخصيص التصميم</button></div>`;
   TEMPLATES.forEach(t=>{
     const p=templatePreviewProject(t),art=$('templatesView').querySelector(`[data-template-card="${t.id}"] .template-art`);
     const cover=createSheet(p,'cover');cover.classList.add('template-mini-cover');cover.setAttribute('aria-hidden','true');
@@ -4864,26 +4631,26 @@ async function openTemplateDemo(id){
   openingTemplateDemo=true;
   const buttons=[...document.querySelectorAll('[data-template-demo]')];buttons.forEach(b=>b.disabled=true);
   try{
-    if(!await switchProjectSafely(()=>createTemplateDemo(t),{browse:true}))return;
+    if(!await switchProjectSafely(()=>createTemplateDemo(t)))return;
     await runLayout();await persistNow();
     studioSyncNavigation();
     currentPage=0;requestAnimationFrame(()=>goPage(0));
-    toast(subscriberSignedIn()?`ملزمة ${t.name} جاهزة للاستكشاف. ستجد ملزمتك السابقة في المحفوظات.`:`نموذج ${t.name} جاهز للمعاينة. سجل الدخول لبدء التعديل.`);
+    toast(`ملزمة ${t.name} جاهزة للاستكشاف. ستجد ملزمتك السابقة في المحفوظات.`);
   }catch(error){toast(error.message||'تعذّر تجهيز الملزمة التجريبية.');}
   finally{openingTemplateDemo=false;buttons.forEach(b=>b.disabled=false);}
 }
 
 async function openProject(id){
-  if(!hasWorkspace())return;
+  if(!requireWorkspace())return;
   if(project.id===id){setView('editor');return;}
-  const opened=await switchProjectSafely(async()=>{const raw=storageReady?await db.get(id):archive.find(p=>p.id===id);if(!raw){toast('لم يُعثر على هذا المشروع.');return null;}return validateProject(raw);},{browse:true});
+  const opened=await switchProjectSafely(async()=>{const raw=storageReady?await db.get(id):archive.find(p=>p.id===id);if(!raw){toast('لم يُعثر على هذا المشروع.');return null;}return validateProject(raw);});
   if(opened)toast('تم فتح الملزمة.');
 }
-function loadProject(p,{browse=false}={}){if(!(browse?hasWorkspace():requireWorkspace()))return false;project=p;selectedId=p.blocks[0]?.id;history=[];future=[];historyTime=0;revision++;layoutRevision=-1;currentPage=0;layoutResult=null;updateHeader();renderEditor();updateHistoryButtons();setView('editor');scheduleSave();runLayout();}
+function loadProject(p){if(!requireWorkspace())return false;project=p;selectedId=p.blocks[0]?.id;history=[];future=[];historyTime=0;revision++;layoutRevision=-1;currentPage=0;layoutResult=null;updateHeader();renderEditor();updateHistoryButtons();setView('editor');scheduleSave();runLayout();}
 function dialog(title,subtitle,body,buttons=[]){$('workspaceDialog').querySelector('.dialog-feedback')?.remove();$('dialogBody').onclick=null;$('dialogTitle').textContent=title;$('dialogSubtitle').textContent=subtitle;$('dialogBody').innerHTML=body;$('dialogActions').replaceChildren();buttons.forEach(b=>{const el=document.createElement('button');el.className=`button ${b.primary?'primary':'secondary'}`;el.textContent=b.label;el.addEventListener('click',async()=>{if(el.disabled)return;el.disabled=true;try{await b.click();}catch(error){toast(error.message||'تعذّر إكمال العملية.');}finally{el.disabled=false;}});$('dialogActions').append(el);});fillIcons($('workspaceDialog'));studioGroupSettings();if(!$('workspaceDialog').open)$('workspaceDialog').showModal();}
 function closeDialog(){if(printWarningPending){printWarningPending=false;printJobActive=false;}$('workspaceDialog').close();}
 function field(name,label,value,type='text',extra=''){return `<label class="form-field ${extra.includes('full')?'full':''}"><span>${label}</span><input data-meta="${name}" type="${type}" value="${escapeHTML(value)}" maxlength="${name==='title'?500:1000}" ${type==='number'?'min="1"':''}></label>`;}
-function openMetadata(isNew=false){if(!requireWorkspace(isNew?'new':'edit'))return;
+function openMetadata(isNew=false){if(!requireWorkspace())return;
   const p=isNew?newProject(workspaceLocal.get('malazem-defaults',{})):project;
   dialog(isNew?'ملزمة جديدة، فكرة جديدة.':'بيانات الملزمة','هذه التفاصيل تصنع غلافك وترويسة صفحاتك.',`<div class="form-grid">${field('title','عنوان الملزمة',p.meta.title,'text','full')}${field('subject','المادة',p.meta.subject)}${field('grade','الصف الدراسي',p.meta.grade)}${field('teacher','اسم الأستاذ',p.meta.teacher)}${field('school','المدرسة أو المعهد',p.meta.school)}${field('year','السنة الدراسية',p.meta.year)}${field('edition','رقم الإصدار',p.meta.edition)}${field('contact','معلومات التواصل (اختيارية)',p.meta.contact,'text','full')}${field('fileName','اسم ملف التصدير',p.meta.fileName,'text','full')}<label class="form-field"><span>لغة الملزمة الأساسية</span><select id="metaLanguage"><option value="ar" ${p.meta.language==='ar'?'selected':''}>العربية — من اليمين</option><option value="en" ${p.meta.language==='en'?'selected':''}>English — left to right</option></select></label><div class="form-field"><span>شعار الغلاف (اختياري)</span><button class="button secondary" id="chooseLogo">${icon('image')}إضافة شعار</button><input id="logoInput" type="file" accept="image/png,image/jpeg,image/webp" hidden><div id="logoInfo" class="helper-text">${p.meta.logo?'يوجد شعار محفوظ':''}</div><button class="text-button" id="removeLogo">إزالة الشعار</button></div></div><label class="check-field"><input id="saveDefaults" type="checkbox">استخدام هذه البيانات للملازم الجديدة</label>`,[{label:'إلغاء',click:closeDialog},{label:isNew?'إنشاء الملزمة':'حفظ البيانات',primary:true,click:async()=>{
     const meta={...p.meta,logo:logoData};$('dialogBody').querySelectorAll('[data-meta]').forEach(e=>meta[e.dataset.meta]=e.value.trim());if(!meta.title)return toast('اكتب عنوانًا للملزمة أولًا.');meta.fileName=meta.fileName||meta.title;meta.language=$('metaLanguage').value;
@@ -4948,8 +4715,8 @@ function blockAction(action,id){if(!requireWorkspace())return;const b=project.bl
   editProject(()=>{const i=project.blocks.findIndex(x=>x.id===id);if(action==='delete'){project.blocks.splice(i,1);selectedId=project.blocks[Math.min(i,project.blocks.length-1)]?.id;}if(action==='up'&&i>0){[project.blocks[i-1],project.blocks[i]]=[project.blocks[i],project.blocks[i-1]];}if(action==='down'&&i<project.blocks.length-1){[project.blocks[i+1],project.blocks[i]]=[project.blocks[i],project.blocks[i+1]];}if(action==='add-row'&&(b.rows?.length||0)<2000)b.rows.push(Array.from({length:b.rows[0].length},()=>''));if(action==='add-column'&&(b.rows?.[0]?.length||0)<12)b.rows.forEach(r=>r.push(''));if(action==='remove-row'&&b.rows.length>1)b.rows.pop();if(action==='remove-column'&&b.rows[0].length>1)b.rows.forEach(r=>r.pop());},{repaint:true,force:true});}
 
 const actions={
-  'edit-text':requestSubscriberEdit,new:()=>openMetadata(true),metadata:()=>openMetadata(),design:openDesign,paste:openPaste,help:openHelp,'add-menu':openAddMenu,
-  export:exportProject,import:()=>{if(requireWorkspace())$('projectFileInput').click();},print:printProject,'optimize-pages':optimizePageFlow,undo:()=>undo(),redo:()=>undo(true),
+  new:()=>openMetadata(true),metadata:()=>openMetadata(),design:openDesign,paste:openPaste,help:openHelp,'add-menu':openAddMenu,
+  export:exportProject,import:()=>$('projectFileInput').click(),print:printProject,'optimize-pages':optimizePageFlow,undo:()=>undo(),redo:()=>undo(true),
   bold:()=>{const b=selectedBlock();if(b)editProject(()=>b.bold=!b.bold,{repaint:true,force:true});},
   italic:()=>{const b=selectedBlock();if(b)editProject(()=>b.italic=!b.italic,{repaint:true,force:true});},
   direction:()=>{const b=selectedBlock();if(b)editProject(()=>b.direction=b.direction==='ltr'?'rtl':'ltr',{repaint:true,force:true});},
@@ -4966,7 +4733,7 @@ document.addEventListener('click',async e=>{
   const ba=e.target.closest('[data-block-action]');if(ba&&blockEl){blockAction(ba.dataset.blockAction,blockEl.dataset.blockId);return;}
   const action=e.target.closest('[data-action]');if(action&&actions[action.dataset.action]){try{await actions[action.dataset.action]();}catch(err){toast(err.message||'تعذّر إكمال العملية.');}return;}
   const demo=e.target.closest('[data-template-demo]');if(demo){await openTemplateDemo(demo.dataset.templateDemo);return;}
-  const template=e.target.closest('[data-template]');if(template){const t=TEMPLATES.find(x=>x.id===template.dataset.template);if(!t)return;if(!subscriberSignedIn()){previewGuestTemplate(t);return;}editProject(()=>project.settings=templateSettings(t,project.settings),{force:true});renderTemplates();toast('تم تطبيق التصميم والغلاف على ملزمتك.');return;}
+  const template=e.target.closest('[data-template]');if(template){const t=TEMPLATES.find(x=>x.id===template.dataset.template);if(!t)return;editProject(()=>project.settings=templateSettings(t,project.settings),{force:true});renderTemplates();toast('تم تطبيق التصميم والغلاف على ملزمتك.');return;}
   const op=e.target.closest('[data-open-project]');if(op){try{await openProject(op.dataset.openProject);}catch(err){toast(err.message);}return;}
   const cp=e.target.closest('[data-copy-project]');if(cp){await copyProject(cp.dataset.copyProject);return;}
   const dp=e.target.closest('[data-delete-project]');if(dp){deleteProject(dp.dataset.deleteProject);return;}
@@ -4982,69 +4749,26 @@ $('closeDialog').onclick=closeDialog;$('workspaceDialog').addEventListener('clic
 $('archiveSearch').oninput=renderArchive;
 $('imageFileInput').onchange=async e=>{if(!requireWorkspace()){e.target.value='';return;}const file=e.target.files[0];e.target.value='';if(!file)return;const target=imageTarget,owner=project;try{const data=await imageData(file);if(project!==owner){toast('تغيرت الملزمة أثناء قراءة الصورة. أضف الصورة مرة أخرى إلى الملزمة المطلوبة.');return;}if(target==='new')insertBlock(block('image','',{image:data,caption:'',width:80}));else{const id=typeof target==='object'?target.convert:target;const b=project.blocks.find(x=>x.id===id);if(b)editProject(()=>{b.type='image';b.image=data;b.caption=b.caption||'';b.width=b.width||80;},{repaint:true,force:true});}}catch(err){toast(err.message);}};
 $('projectFileInput').onchange=async e=>{if(!requireWorkspace()){e.target.value='';return;}const file=e.target.files[0];e.target.value='';if(!file)return;try{if(file.size>35000000)throw new Error('اختر مشروعًا أصغر من ٣٥ ميغابايت.');const p=validateProject(JSON.parse(await file.text()));p.id=uid();p.updatedAt=new Date().toISOString();if(!await switchProjectSafely(()=>p))return;await persistNow();toast('تم استيراد المشروع مع محتواه وتصميمه ومرفقاته.');}catch(err){toast(err instanceof SyntaxError?'لم يُقرأ الملف. اختر ملف مشروع JSON صالحًا.':err.message);}};
-document.addEventListener('keydown',e=>{if($('developerContactDialog').open){if((e.ctrlKey||e.metaKey)&&['s','p','z'].includes(e.key.toLowerCase()))e.preventDefault();return;}if(equationSession&&$('workspaceDialog').open){if((e.ctrlKey||e.metaKey)&&(e.key==='Enter'||e.key.toLowerCase()==='s')){e.preventDefault();commitEquationEditor();}return;}if($('workspaceDialog').open&&(e.ctrlKey||e.metaKey)&&['s','p'].includes(e.key.toLowerCase())){e.preventDefault();toast('احفظ تغييرات النافذة أو أغلقها أولًا.');return;}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'&&!$('workspaceDialog').open){e.preventDefault();undo(e.shiftKey);}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();exportProject().catch(error=>toast(error.message||'تعذّر تنزيل المشروع.'));}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='p'){e.preventDefault();choosePrint();}if(e.key==='Escape')document.body.classList.remove('expanded-preview');});
+document.addEventListener('keydown',e=>{if(equationSession&&$('workspaceDialog').open){if((e.ctrlKey||e.metaKey)&&(e.key==='Enter'||e.key.toLowerCase()==='s')){e.preventDefault();commitEquationEditor();}return;}if($('workspaceDialog').open&&(e.ctrlKey||e.metaKey)&&['s','p'].includes(e.key.toLowerCase())){e.preventDefault();toast('احفظ تغييرات النافذة أو أغلقها أولًا.');return;}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'&&!$('workspaceDialog').open){e.preventDefault();undo(e.shiftKey);}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();exportProject().catch(error=>toast(error.message||'تعذّر تنزيل المشروع.'));}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='p'){e.preventDefault();choosePrint();}if(e.key==='Escape')document.body.classList.remove('expanded-preview');});
 window.addEventListener('resize',()=>{updateZoom();$('blocksEditor').querySelectorAll('textarea').forEach(autoSize);});
 window.addEventListener('beforeprint',populatePrint);
 window.addEventListener('afterprint',()=>{printJobActive=false;updateHeader();});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')persistNow();});
-window.addEventListener('beforeunload',e=>{if(canEditProject()&&revision!==savedRevision){persistNow();e.preventDefault();e.returnValue='';}});
+window.addEventListener('beforeunload',e=>{if(project&&revision!==savedRevision){persistNow();e.preventDefault();e.returnValue='';}});
 async function init(){
   fillIcons();$('templateCount').textContent=arabicNumber(TEMPLATES.length);
   workspaceLocal=scopedLocal(WORKSPACE_SCOPE);
   try{await db.init(WORKSPACE_SCOPE);storageReady=true;archive=await db.all();}catch{if($('localSaveCaption'))$('localSaveCaption').textContent='الحفظ التلقائي غير متاح';toast('الحفظ المحلي غير متاح. نزّل المشروع للاحتفاظ بعملك.');}
   const last=workspaceLocal.get('malazem-last-project'),previous=archive.find(p=>p.id===last)||archive[0];
-  try{project=previous?validateProject(previous):newProject({},true);}catch{project=newProject({},true);toast('تعذر فتح آخر مسودة. يمكنك استيراد نسخة المشروع المحفوظة.');}
+  try{project=previous?validateProject(previous):newProject(workspaceLocal.get('malazem-defaults',{}));}catch{project=newProject(workspaceLocal.get('malazem-defaults',{}));toast('تعذر فتح آخر مسودة. يمكنك استيراد نسخة المشروع المحفوظة.');}
   selectedId=project.blocks[0]?.id;revision++;savedRevision=0;layoutRevision=-1;layoutResult=null;currentPage=0;workspaceReady=true;
-  updateHeader();renderEditor();renderRecent();refreshSubscriberUI();await runLayout();
+  updateHeader();renderEditor();renderRecent();updateHistoryButtons();await runLayout();
   if(!previous&&layoutResult){currentPage=0;requestAnimationFrame(()=>goPage(currentPage));studioSyncNavigation();}
   await persistNow();
-  trackDeveloperContactVisit();
 }
-
-// One visit is one completed app opening, including a page reload.
-// Show on the first visit, then every five visits: 1, 6, 11, 16.
-// Manual contact opens never advance or reset this cadence.
-let developerContactPending=false,developerContactShown=false;
-function openDeveloperContact(){
-  developerContactPending=false;developerContactShown=true;
-  const contact=$('developerContactDialog');
-  if(contact.open)return;
-  contact.showModal();
-  document.querySelectorAll('[data-studio-route="contact"]').forEach(button=>button.setAttribute('aria-expanded','true'));
-}
-function maybeShowDeveloperContact(){
-  if(!developerContactPending||!workspaceReady||document.visibilityState==='hidden'||document.querySelector('dialog[open]'))return;
-  openDeveloperContact();
-}
-function trackDeveloperContactVisit(){
-  const key='malazem-developer-contact-visit-count-v2';
-  const stored=safeLocal.get(key,0);
-  const previous=Number.isSafeInteger(stored)&&stored>=0&&stored<Number.MAX_SAFE_INTEGER?stored:0;
-  const visits=previous+1;
-  // Do not promise a recurring prompt if this browser cannot retain the count.
-  if(!safeLocal.set(key,visits))return;
-  developerContactPending=(visits-1)%5===0&&!developerContactShown;
-  maybeShowDeveloperContact();
-}
-function initDeveloperContact(){
-  const contact=$('developerContactDialog');
-  contact.querySelectorAll('[data-developer-close]').forEach(button=>button.addEventListener('click',()=>contact.close()));
-  contact.addEventListener('close',()=>{
-    document.querySelectorAll('[data-studio-route="contact"]').forEach(button=>button.setAttribute('aria-expanded','false'));
-  });
-  contact.addEventListener('click',event=>{
-    if(event.target!==contact)return;
-    const rect=contact.getBoundingClientRect();
-    if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)contact.close();
-  });
-  // A due prompt waits for an active dialog to close instead of covering it.
-  document.addEventListener('close',()=>requestAnimationFrame(maybeShowDeveloperContact),true);
-  document.addEventListener('visibilitychange',maybeShowDeveloperContact);
-}
-
 async function jumpShowcase(feature){
   if(!isShowcaseProject(project))return;
-  if(feature==='toc'&&!project.settings.toc){if(subscriberSignedIn())editProject(()=>project.settings.toc=true,{force:true});else{project.settings.toc=true;revision++;layoutRevision=-1;}}
+  if(feature==='toc'&&!project.settings.toc)editProject(()=>project.settings.toc=true,{force:true});
   await runLayout();if(!layoutResult)return;
   let page=0,target=null;
   if(feature==='toc')page=layoutResult.pages.findIndex(p=>p.kind==='toc');
@@ -5063,15 +4787,13 @@ function studioSyncNavigation(){
   const route=preview?'preview':currentView;
   document.querySelectorAll('[data-view]').forEach(button=>{const active=!preview&&button.dataset.view===currentView;button.classList.toggle('active',active);if(active)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');});
   document.querySelectorAll('button[data-studio-route]').forEach(button=>{
-    const active=button.dataset.studioRoute===route||(route==='archive'&&button.dataset.studioRoute==='more');button.classList.toggle('active',active);
+    const active=button.dataset.studioRoute===route;button.classList.toggle('active',active);
     if(active)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');
   });
   if(preview){$('viewTitle').textContent='معاينة الملزمة';$('viewSubtitle').textContent='راجع صفحاتك قبل الطباعة.';}
 }
 function studioNavigate(route){
-  if(route==='more'){if(!$('studioToolsDialog').open)$('studioToolsDialog').showModal();return;}
-  if($('studioToolsDialog').open)$('studioToolsDialog').close();
-  if(route==='contact'){openDeveloperContact();return;}
+  if(route==='more'){$('studioToolsDialog').showModal();return;}
   document.body.classList.remove('expanded-preview');
   setView(route==='preview'?'editor':route);
   document.body.classList.toggle('mobile-preview',route==='preview');
@@ -5092,7 +4814,6 @@ function studioGroupSettings(){
 }
 function studioInitUI(){
   const historyBar=document.createElement('div');historyBar.className='studio-editor-history';
-  historyBar.insertAdjacentHTML('beforeend','<button type="button" class="button secondary subscriber-edit-button" data-action="edit-text">'+icon('edit')+'<span id="subscriberEditLabel">تعديل النص</span></button>');
   historyBar.append($('undoButton'),$('redoButton'));
   historyBar.insertAdjacentHTML('beforeend','<button type="button" class="text-button equation-shortcut" data-add="equation" aria-label="كتابة معادلة بسهولة">'+icon('function')+'معادلة</button><button type="button" class="text-button" data-action="design">'+icon('sliders')+'التصميم</button>');
   document.querySelector('.format-toolbar').before(historyBar);
@@ -5142,14 +4863,14 @@ const LIBRARY_ICONS=['info','bulb','alert','repeat','scales','bookmark','help','
 const ICON_NAMES={info:'معلومة',bulb:'فكرة',alert:'تنبيه',repeat:'تكرار',scales:'قانون',bookmark:'مرجع',help:'سؤال',star:'نجمة', 'check-circle':'صحيح',target:'هدف',book:'كتاب',spark:'تميّز',pen:'قلم',shield:'حماية',function:'رياضيات',image:'رسم'};
 const ORNAMENTS=[['ﷺ','الصلاة على النبي'],['ﷻ','جل جلاله'],['رضي الله عنه','ترضية'],['رضي الله عنها','ترضية'],['عليه السلام','تسليم'],['﴿ ﴾','أقواس آية'],['۞','فاصل قرآني'],['۩','علامة سجدة'],['❁','زهرة'],['✦','نجمة'],['◆ ◇ ◆','فاصل هندسي'],['❖ ❖ ❖','فاصل زخرفي'],['بسم الله الرحمن الرحيم','البسملة']];
 let ornamentTarget=null,printEco=false,printJobActive=false,printWarningPending=false;
-function ensureReady(){if(!hasWorkspace()){toast('انتظر قليلًا حتى تجهز الملزمة.');return false;}return true;}
+function ensureReady(){if(!requireWorkspace()){toast('انتظر قليلًا حتى تجهز الملزمة.');return false;}return true;}
 function calloutLabel(b){return CALLOUTS[b.callout]?.label||TYPES[b.type];}
-function openAssetLibrary(){if(!requireWorkspace())return;
+function openAssetLibrary(){if(!ensureReady())return;
  dialog('صناديق وأيقونات جاهزة','اختر بطاقة لإضافتها بعد العنصر المحدد. كل الرسوم مدمجة وتعمل دون إنترنت.',`<div class="tool-section-label">صناديق تعليمية جاهزة للطباعة</div><div class="callout-picker">${Object.entries(CALLOUTS).map(([key,c])=>`<button class="callout-choice" data-callout="${key}" style="--callout-color:${c.color};--callout-bg:${c.background}">${icon(c.icon)}<strong>${c.label}</strong><small>اضغط ثم اكتب المحتوى</small></button>`).join('')}</div><div class="tool-section-label">أيقونات SVG مستقلة</div><div class="svg-picker">${LIBRARY_ICONS.map(k=>`<button data-library-icon="${k}">${icon(k)}<span>${ICON_NAMES[k]}</span></button>`).join('')}</div>`,[{label:'إغلاق',click:closeDialog}]);
  $('dialogBody').onclick=e=>{const card=e.target.closest('[data-callout]'),item=e.target.closest('[data-library-icon]');if(card){const key=card.dataset.callout;insertBlock(block('note','',{callout:key,iconKey:CALLOUTS[key].icon}));}else if(item)insertBlock(block('icon',ICON_NAMES[item.dataset.libraryIcon],{iconKey:item.dataset.libraryIcon}));};
 }
 function rememberTextPosition(e){const t=e.target;if(t.matches('#blocksEditor textarea[data-field="text"],#blocksEditor textarea[data-field="answer"],#blocksEditor textarea[data-field="solution"],#blocksEditor textarea[data-field="caption"]'))ornamentTarget={id:t.closest('[data-block-id]').dataset.blockId,field:t.dataset.field,start:t.selectionStart,end:t.selectionEnd};}
-function openOrnaments(){if(!requireWorkspace())return;
+function openOrnaments(){if(!ensureReady())return;
  const b=selectedBlock();const target=ornamentTarget?.id===b?.id?{...ornamentTarget}:null;
  dialog('رموز وزخارف عربية','اختر موضع الكتابة أولًا، ثم اضغط الرمز. يُدرج الفاصل الزخرفي كعنصر مستقل.',`<div class="ornament-picker">${ORNAMENTS.map(([value,name],i)=>`<button data-ornament="${i}"><span>${value}</span><small>${name}</small></button>`).join('')}</div><p class="helper-text">الرموز مكتوبة بخط النسخ المدمج. يمكنك اختيار خط النسخ أيضًا من إعدادات التصميم.</p>`,[{label:'إغلاق',click:closeDialog}]);
  $('dialogBody').onclick=e=>{const button=e.target.closest('[data-ornament]');if(!button)return;const value=ORNAMENTS[Number(button.dataset.ornament)][0];const current=target&&project.blocks.find(x=>x.id===target.id);const isSeparator=Number(button.dataset.ornament)>=6&&Number(button.dataset.ornament)<=11;
@@ -5163,7 +4884,7 @@ function watermarkLayer(settings){
  const layer=document.createElement('div');layer.className='dynamic-watermark';layer.setAttribute('aria-hidden','true');layer.style.opacity=clamp(settings.watermarkOpacity,.02,.45,.1);layer.style.setProperty('--watermark-angle',`${clamp(settings.watermarkAngle,-75,75,-30)}deg`);
  for(let i=0;i<12;i++){const tile=document.createElement('div');tile.className='watermark-tile';if(image){const img=document.createElement('img');img.src=settings.watermarkImage;img.alt='';tile.append(img);}else tile.textContent=settings.watermark;layer.append(tile);}return layer;
 }
-function openWatermark(){if(!requireWorkspace())return;
+function openWatermark(){if(!ensureReady())return;
  const s=project.settings;let logo=s.watermarkImage||'';
  dialog('حماية الملزمة بعلامة مائية','تتكرر خلف جميع الصفحات، وتُحفظ ضمن ملف المشروع.',`<div class="form-grid"><label class="form-field"><span>نوع العلامة</span><select id="wmType"><option value="text">نص مائل</option><option value="image">شعار شفاف</option></select></label><label class="form-field"><span>النص، مثل اسم المعلم ورقم الهاتف</span><input id="wmText" maxlength="100" value="${escapeHTML(s.watermark||'')}"></label><div class="form-field full"><span>شعار العلامة المائية</span><input id="wmFile" type="file" accept="image/png,image/jpeg,image/webp"><button class="text-button" id="wmRemove">إزالة الشعار</button><small id="wmFileStatus">${logo?'يوجد شعار محفوظ':'اختر PNG شفافًا للحصول على نتيجة أوضح'}</small></div><label class="form-field"><span>الشفافية: <output id="wmOpacityLabel"></output></span><input id="wmOpacity" type="range" min="2" max="45" value="${Math.round((s.watermarkOpacity??.1)*100)}"></label><label class="form-field"><span>زاوية الميلان: <output id="wmAngleLabel"></output></span><input id="wmAngle" type="range" min="-75" max="75" value="${s.watermarkAngle??-30}"></label></div><div id="wmPreview" class="watermark-preview" aria-label="معاينة العلامة المائية"></div>`,[{label:'إلغاء',click:closeDialog},{label:'إزالة العلامة',click:()=>{editProject(()=>{project.settings.watermark='';project.settings.watermarkImage='';},{force:true});closeDialog();}},{label:'حفظ العلامة',primary:true,click:()=>{const value=read();if(value.watermarkType==='image'&&!logo)return toast('اختر شعارًا أولًا.');if(value.watermarkType==='text'&&!value.watermark.trim())return toast('اكتب نص العلامة أولًا.');editProject(()=>Object.assign(project.settings,value),{force:true});closeDialog();}}]);
  $('wmType').value=s.watermarkType||'text';
@@ -5174,7 +4895,7 @@ function openWatermark(){if(!requireWorkspace())return;
  $('wmRemove').onclick=()=>{logo='';$('wmType').value='text';$('wmFileStatus').textContent='أُزيل الشعار';preview();};preview();
 }
 function syncEco(){const enabled=Boolean(project?.settings.ecoPrint);$('previewPages').classList.toggle('eco-output',enabled);document.querySelectorAll('[data-action="eco"]').forEach(b=>{b.setAttribute('aria-pressed',String(enabled));b.classList.toggle('is-active',enabled);b.innerHTML=icon('printer')+`<span>توفير الحبر: ${enabled?'مفعّل':'متوقف'}</span>`;});}
-function toggleEco(){if(!requireWorkspace())return;editProject(()=>project.settings.ecoPrint=!project.settings.ecoPrint,{force:true});syncEco();toast(project.settings.ecoPrint?'المعاينة اقتصادية. يمكنك حفظ PDF ملوّن من خيارات الطباعة.':'أُعيدت المعاينة إلى ألوانها الأصلية.');}
+function toggleEco(){if(!ensureReady())return;editProject(()=>project.settings.ecoPrint=!project.settings.ecoPrint,{force:true});syncEco();toast(project.settings.ecoPrint?'المعاينة اقتصادية. يمكنك حفظ PDF ملوّن من خيارات الطباعة.':'أُعيدت المعاينة إلى ألوانها الأصلية.');}
 function populatePrint(){if(!layoutResult)return;$('printRoot').classList.toggle('eco-output',printJobActive?printEco:Boolean(project.settings.ecoPrint));$('printRoot').replaceChildren(...layoutResult.nodes.map(n=>n.cloneNode(true)));}
 async function choosePrint(){if(!ensureReady())return;
  dialog('طباعة الملزمة أو حفظ PDF','اختر النسخة المطلوبة. في نافذة المتصفح اختر الطابعة أو حفظ بتنسيق PDF.',`<div class="print-choices"><button data-print-kind="color">${icon('palette')}<strong>نسخة ملوّنة / PDF ملوّن</strong><small>الألوان والخلفيات الأصلية كاملة</small></button><button data-print-kind="eco">${icon('printer')}<strong>نسخة اقتصادية للطباعة</strong><small>خلفيات بيضاء وحدود رمادية لتوفير الحبر</small></button></div><p class="helper-text">إعدادات موصى بها: ورق A4، مقياس ١٠٠٪، هوامش بدون، وإيقاف ترويسات المتصفح. للنسخة الملونة فعّل رسومات الخلفية.</p>`,[{label:'إلغاء',click:closeDialog}]);
@@ -5268,7 +4989,7 @@ function initClassroomTools(){
  const addMenu=openAddMenu;actions['add-menu']=()=>{addMenu();if(document.body.dataset.studioView!=='preview')return;$('dialogBody').insertAdjacentHTML('afterbegin','<div class="add-extras"><button class="button secondary" data-action="assets">'+icon('spark')+'صندوق مميز أو أيقونة</button><button class="button secondary" data-action="ornaments">'+icon('book')+'رمز أو زخرفة عربية</button></div>');syncPreviewToolVisibility();};
  syncPreviewToolVisibility();
 }
-async function openToc(){if(!requireWorkspace())return;await runLayout();if(!layoutResult)return toast('راجع المعاينة أولًا.');
+async function openToc(){if(!ensureReady())return;await runLayout();if(!layoutResult)return toast('راجع المعاينة أولًا.');
  const rows=layoutResult.headings;
  dialog('الفهرس المتزامن مع الصفحات','أضف عنوان فصل أو درس أو عنوانًا فرعيًا. تتحدث أرقام الفهرس تلقائيًا مع تغيّر الصفحات.',`<label class="check-field"><input id="tocEnabled" type="checkbox" ${project.settings.toc?'checked':''}>إظهار الفهرس في الملزمة</label><label class="form-field"><span>مستويات العناوين</span><select id="tocLevels"><option value="1">الفصول فقط</option><option value="2">الفصول والدروس</option><option value="3">الفصول والدروس والعناوين الفرعية</option></select></label><div class="toc-outline">${rows.length?rows.map(h=>{const index=layoutResult.pages.findIndex(pg=>pg.columns.some(c=>c.some(b=>b.id===h.id&&!b.continuation)));return `<button data-outline-page="${index}" style="padding-inline-start:${12+(h.level-1)*15}px"><span>${escapeHTML(h.text)}</span><strong>${numberLabel(index+project.settings.numberStart-(project.settings.cover&&project.settings.excludeCover?1:0),project.settings.numberStyle)}</strong></button>`;}).join(''):'<p>لا توجد عناوين بعد. أضف عنوان فصل من زر إضافة عنصر.</p>'}</div>`,[{label:'إغلاق',click:closeDialog},{label:'تطبيق إعدادات الفهرس',primary:true,click:()=>{editProject(()=>{project.settings.toc=$('tocEnabled').checked;project.settings.tocLevel=Number($('tocLevels').value);},{force:true});closeDialog();}}]);
  $('tocLevels').value=project.settings.tocLevel;$('dialogBody').onclick=e=>{const item=e.target.closest('[data-outline-page]');if(item){closeDialog();studioNavigate('preview');requestAnimationFrame(()=>goPage(Number(item.dataset.outlinePage)));}};
@@ -5280,9 +5001,7 @@ function quizEditorFields(b){const type=b.quizType||(b.answer?.length>120?'revie
 
 initEquationEditor();
 studioInitUI();
-initDeveloperContact();
 initClassroomTools();
-initSubscriberAccess();
 init().catch(err=>{console.error(err);toast('حدث خطأ أثناء تجهيز الاستوديو. جرّب إعادة تحميل الصفحة.');});
 
 })();
